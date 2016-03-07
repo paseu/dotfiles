@@ -1,0 +1,8 @@
+# mpv config
+player=mpv --cache=2048 --no-resume-playback
+
+# let player decide when to exit
+#player-no-close
+
+# continumously try to open the stream
+player-continuous-http

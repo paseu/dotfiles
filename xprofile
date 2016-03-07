@@ -1,0 +1,14 @@
+# QGtkStyle for Qt 5
+QT_STYLE_OVERRIDE=GTK+
+
+# input method
+export GTK_IM_MODULE='uim'
+export QT_IM_MODULE='uim'
+uim-xim &
+export XMODIFIERS='@im=uim'
+
+# automount
+udiskie -As &
+
+# pasystray - this should start by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
+#pasystray &

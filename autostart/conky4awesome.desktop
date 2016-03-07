@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Conky4awesome
+GenericName=System monitor
+Comment=Run conky for awesome wm
+Exec=/home/paseu/.conky/conky_awesome.sh
+Icon=conky
+Terminal=false
+Type=Application
+Categories=System;
+StartupNotify=false
+Hidden=false
