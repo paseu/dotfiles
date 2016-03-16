@@ -13,5 +13,4 @@ udiskie -As &
 # compton
 compton --config /home/paseu/.config/compton_awesome.conf &
 
-# pasystray - this should start by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
-#pasystray &
+# pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
