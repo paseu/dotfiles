@@ -466,7 +466,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 local xresources_name = "awesome.started"
 local xresources = awful.util.pread("xrdb -query")
 if not xresources:match(xresources_name) then
-    os.execute("urxvtd -q -o -f")
     os.execute("dex -a -e Awesome")
 end
 awful.util.spawn_with_shell("xrdb -merge <<< " .. "'" .. xresources_name .. ": true'")
