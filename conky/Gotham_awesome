@@ -40,7 +40,7 @@ conky.config = {
 
 conky.text = [[
 ${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${goto 350}${time %A}${font}
-${voffset 0}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 3600 checkupdates | wc -l}${goto 80}${color FFA300}AUR ${offset 11}${color}${execpi 3600 cower -uq | wc -l}${goto 160}${color FFA300}UTC ${offset 10}${color}${utime %dd   %H:%M:%S}${goto 300}${color FFA300}EMAIL${offset 31}$color${execpi 300 python ~/.scripts/gmail.py}
+${voffset 0}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 3600 checkupdates | wc -l}${goto 80}${color FFA300}AUR ${offset 11}${color}${execpi 3600 cower -uq | wc -l}${goto 160}${color FFA300}UTC ${offset 10}${color}${utime %dd %H:%M:%S}${goto 300}${color FFA300}EMAIL${offset 31}$color${execpi 300 python ~/.scripts/gmail.py}
 ${voffset 0}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 10}${color}${cpu cpu0} %${goto 80}${color FFA300}MEM ${offset 7}${color}${memperc} %${goto 160}${color FFA300}dAta ${offset 8}${color}${fs_free /media/dAta}${goto 300}${color FFA300}WEATHER ${offset 10}$color${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Temp | cut -c17-20}   ${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Humidity | cut -c23-25}   ${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Sky | cut -c20-40}
 
 
