@@ -15,7 +15,7 @@ export XMODIFIERS='@im=uim'
 udiskie -As &
 
 # compton
-compton --config /home/paseu/.config/compton_awesome.conf &
+#compton --config /home/paseu/.config/compton_awesome.conf &
 
 # urxvtd
 urxvtd -q -o -f
