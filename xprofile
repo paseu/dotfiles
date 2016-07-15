@@ -1,5 +1,8 @@
+# compton
+compton --backend glx &
+
 # no at-spi-bus-launcher error
-#rm /usr/share/dbus-1/services/org.a11y.*
+# rm /usr/share/dbus-1/services/org.a11y.*
 export NO_AT_BRIDGE=1
 
 # QGtkStyle for Qt 5
@@ -13,9 +16,6 @@ export XMODIFIERS='@im=uim'
 
 # automount
 udiskie -As &
-
-# compton
-compton --config /home/paseu/.config/compton_awesome.conf &
 
 # urxvtd
 urxvtd -q -o -f
