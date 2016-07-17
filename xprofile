@@ -1,5 +1,7 @@
+## Prevent Tearing
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" 2>/dev/null &!
 # compton
-compton --backend glx &
+compton --config /home/paseu/.config/compton_awesome.conf &!
 
 # no at-spi-bus-launcher error
 # rm /usr/share/dbus-1/services/org.a11y.*
@@ -11,11 +13,11 @@ QT_STYLE_OVERRIDE=GTK+
 # input method
 export GTK_IM_MODULE='uim'
 export QT_IM_MODULE='uim'
-uim-xim &
+uim-xim &!
 export XMODIFIERS='@im=uim'
 
 # automount
-udiskie -As &
+udiskie -As &!
 
 # urxvtd
 urxvtd -q -o -f
