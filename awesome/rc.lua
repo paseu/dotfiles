@@ -280,7 +280,7 @@ globalkeys = awful.util.table.join(
                   awful.prompt.run({ prompt = "Web search: " }, 
                   mypromptbox[mouse.screen].widget,
                       function (command)
-                          awful.util.spawn("firefox 'http://yubnub.org/parser/parse?command="..command.."'", false)
+                          awful.util.spawn("firefox 'http://encrypted.google.com/search?q="..command.."'", false)
                       end)
               end),
     -- Menubar
