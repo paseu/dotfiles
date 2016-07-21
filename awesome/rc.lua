@@ -275,6 +275,14 @@ globalkeys = awful.util.table.join(
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
               end),
+    awful.key({ modkey }, "F12", 
+              function ()
+                  awful.prompt.run({ prompt = "Web search: " }, 
+                  mypromptbox[mouse.screen].widget,
+                      function (command)
+                          awful.util.spawn("firefox 'http://yubnub.org/parser/parse?command="..command.."'", false)
+                      end)
+              end),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end)
 )
