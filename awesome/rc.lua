@@ -90,6 +90,17 @@ tags = {
      tags[s] = awful.tag(tags.names, s, tags.layout)
  end
 -- }}}
+-- {{{ Tag Wallpapers
+for s = 1, screen.count() do
+    for t = 1, 5 do
+        tags[s][t]:connect_signal("property::selected", function (tag)
+            if not tag.selected then return end
+            theme.wallpaper = "/home/paseu/Pictures/.wallpaper/" .. t .. ".png"
+            gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+    	end)
+    end
+end
+-- }}}
 
 -- {{{ Menu
 -- Create a laucher widget and a main menu
@@ -373,8 +384,8 @@ awful.rules.rules = {
                      keys = clientkeys,
                      buttons = clientbuttons,
                      size_hints_honor = false } },
-    { rule = { class = "gimp" },
-      properties = { floating = true } },
+    { rule = { class = "Gimp" },
+      properties = { tag = tags[1][4] , floating = true } },
     { rule = { instance = "plugin-container" },
       properties = { floating = true } },
     { rule = { instance = "Plugin-container" },
