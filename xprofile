@@ -1,7 +1,11 @@
 ## Prevent Tearing
 nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" 2>/dev/null &!
-# compton
-compton --config /home/paseu/.config/compton_awesome.conf &!
+# compositor
+xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &!
+#compton --config /home/paseu/.config/compton_awesome.conf &!
+
+# conky
+# -> awesome/rc.lua
 
 # no at-spi-bus-launcher error
 # rm /usr/share/dbus-1/services/org.a11y.*
