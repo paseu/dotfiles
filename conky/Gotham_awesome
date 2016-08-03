@@ -5,9 +5,9 @@ conky.config = {
 	update_interval = 1,
 	total_run_times = 0,
 
-    background = true,
-	own_window = true,
-	own_window_type = 'override',
+    background = no,
+	own_window = no,
+	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 	own_window_colour = '#000000',
@@ -40,10 +40,10 @@ conky.config = {
 
 conky.text = [[
 ${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}
-${voffset 0}${color FFA300}${goto 373}${offset 9}$color${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Temp | cut -c17-20}  ${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Humidity | cut -c23-25}  ${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Sky | cut -c20-40}
-${voffset -7}${font GE Inspira:pixelsize=58}${goto 350}${time %A}${font}
-${voffset 3}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 3600 checkupdates | wc -l}${goto 85}${color FFA300}AUR ${offset 11}${color}${execpi 3600 cower -uq | wc -l}${goto 180}${color FFA300}UTC ${offset 24}${color}${utime %dd %H:%M:%S}${goto 370}${color FFA300}EMAIL${offset 16}$color${execpi 300 python ~/.scripts/gmail.py}
-${voffset 0}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 10}${color}${cpu cpu0} %${goto 85}${color FFA300}MEM ${offset 7}${color}${memperc} %${goto 180}${color FFA300}DISKIO ${offset 9}${color}${diskio}${goto 370}${color FFA300}dAta ${offset 22}${color}${fs_free /media/dAta}
+${voffset 1}${color FFA300}${goto 470}${offset 9}$color${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Temp | cut -c17-20}  ${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Humidity | cut -c23-25}  ${execpi 3600 weather-report -m 37.6465586,127.30118570000002 | grep Sky | cut -c20-40}
+${voffset -7}${font GE Inspira:pixelsize=58}${goto 440}${time %A}${font}
+${voffset 3}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 3600 checkupdates | wc -l}${goto 180}${color FFA300}AUR ${offset 11}${color}${execpi 3600 cower -uq | wc -l}${goto 300}${color FFA300}UTC ${offset 24}${color}${utime %dd %H:%M:%S}${goto 450}${color FFA300}EMAIL${offset 16}$color${execpi 300 python ~/.scripts/gmail.py}
+${voffset 0}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 10}${color}${cpu cpu0} %${goto 180}${color FFA300}MEM ${offset 7}${color}${memperc} %${goto 300}${color FFA300}DISKIO ${offset 9}${color}${diskio}${goto 450}${color FFA300}dAta ${offset 22}${color}${fs_free /media/dAta}
 
 
 
