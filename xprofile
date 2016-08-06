@@ -5,6 +5,7 @@ nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCom
 #compton --config /home/paseu/.config/compton_awesome.conf &!
 
 # conky
+conky -c /home/$USER/.conky/Gotham_awesome -d
 # -> awesome/rc.lua
 
 # no at-spi-bus-launcher error
@@ -22,6 +23,9 @@ export XMODIFIERS='@im=uim'
 
 # automount
 udiskie -As &!
+
+# start a tmux session w/o attaching to the session(like daemon).
+#tmux new-session -s $USER -d
 
 # urxvtd
 urxvtd -q -o -f
