@@ -4,16 +4,13 @@ nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCom
 #xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &!
 #compton --config /home/paseu/.config/compton_awesome.conf &!
 
-# conky
-conky -c /home/$USER/.conky/Gotham_awesome -d
-# -> awesome/rc.lua
-
 # no at-spi-bus-launcher error
 # rm /usr/share/dbus-1/services/org.a11y.*
 export NO_AT_BRIDGE=1
 
 # QGtkStyle for Qt 5
-QT_STYLE_OVERRIDE=GTK+
+export QT_STYLE_OVERRIDE=adwaita
+export QT_QPA_PLATFORMTHEME=qgnomeplatform
 
 # input method
 export GTK_IM_MODULE='uim'
@@ -29,5 +26,9 @@ udiskie -As &!
 
 # urxvtd
 urxvtd -q -o -f
+
+# conky
+#conky -c /home/$USER/.conky/Gotham_awesome -d 2>/dev/null
+# -> awesome/rc.lua
 
 # pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
