@@ -1,5 +1,5 @@
 ## Prevent Tearing
-nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" 2>/dev/null &!
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" >/dev/null 2>&1 & 
 # compositor
 #xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &!
 #compton --config /home/paseu/.config/compton_awesome.conf &!
