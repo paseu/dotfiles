@@ -80,6 +80,10 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
+alias tormpv="torsocks mpv --profile=ear"
+alias mpvradio="mpv --profile=radio"
+alias sproc="ps -aux|egrep -i"
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
