@@ -402,6 +402,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][3] } },
     { rule = { class = "Wine" },
       properties = { tag = tags[1][3] } },
+    { rule = { class = "mpv" },
+      properties = { tag = tags[1][1] } },
 
 --  { rule = { class = "Termite" },
 --    properties = { opacity = 0.7} },
