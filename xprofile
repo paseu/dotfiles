@@ -6,7 +6,7 @@
 
 # no at-spi-bus-launcher error
 # rm /usr/share/dbus-1/services/org.a11y.*
-export NO_AT_BRIDGE=1
+#export NO_AT_BRIDGE=1
 
 # QGtkStyle for Qt 5
 #export QT_STYLE_OVERRIDE=adwaita
