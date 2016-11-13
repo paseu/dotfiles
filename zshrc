@@ -84,6 +84,8 @@ alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
 alias tormpv="torsocks mpv --profile=ear"
 alias radio="mpv --profile=radio"
 alias sproc="ps -aux|grep -v "grep"|egrep -i"
+alias pacupdates="sudo pacman -Syu"
+alias pacinfo="pacman -Qi"
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
