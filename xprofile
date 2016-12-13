@@ -2,7 +2,8 @@
 #nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" >/dev/null 2>&1 & 
 # compositor
 #xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &!
-#compton --config /home/paseu/.config/compton_awesome.conf &!
+#compton -CGb 
+compton --config ~/.config/compton_awesome.conf -b
 
 # no at-spi-bus-launcher error
 # rm /usr/share/dbus-1/services/org.a11y.*
