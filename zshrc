@@ -83,7 +83,7 @@ fi
 alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
 alias tormpv="torsocks mpv --profile=ear"
 alias radio="mpv --profile=radio"
-alias sproc="ps -aux|grep -v "grep"|egrep -i"
+alias sproc="ps -aux|grep -v "grep"|egrep -i --color"
 alias pacupdates="sudo pacman -Syu"
 alias pacinfo="pacman -Qi"
 alias paccheck="checkupdates && cower -u"
