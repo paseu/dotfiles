@@ -87,6 +87,7 @@ alias sproc="ps -aux|grep -v "grep"|egrep -i --color"
 alias pacupdates="sudo pacman -Syu"
 alias pacinfo="pacman -Qi"
 alias paccheck="checkupdates && cower -u"
+alias mpl="mpv --playlist"
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
