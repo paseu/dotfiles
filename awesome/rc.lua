@@ -42,7 +42,7 @@ beautiful.init("/home/paseu/.config/awesome/themes/default/theme.lua")
 awesome.font = "SFNS Display 8"
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvtc -e zsh -c 'tmux has-session && tmux attach-session -d || tmux new-session -s $USER'"
+terminal = "urxvtc -e zsh -c 'tmux -q has-session && tmux attach-session -d || tmux new-session -s $USER'"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
