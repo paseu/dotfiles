@@ -7,8 +7,8 @@ conky.config = {
 
     background = false,
     own_window_class = Conky,
-	own_window = true,
-    own_window_type = 'override',
+	own_window = false,
+    own_window_type = 'desktop',
     draw_borders = false,
     draw_outline = false,
 	own_window_transparent = true,
