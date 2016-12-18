@@ -81,3 +81,5 @@ set pastetoggle=<F2>
 
 filetype plugin indent on
 syntax on
+
+nmap <CR> o<Esc>
