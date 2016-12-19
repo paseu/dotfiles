@@ -9,8 +9,8 @@ AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man
 
 # Set window geometry (except height)
 Width = 400
-Top = 300
-Left = 450
+Top = 35 
+Left = 15
 
 # History size
 History = 10000
