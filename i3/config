@@ -201,7 +201,7 @@ client.urgent           $base02 $base08    $base00 $base0F
 # finds out, if available)
 bar {
         font pango:DejaVu Sans Mono 10
-        position top
+        position bottom
         colors {
           separator $base03
           background $base01
