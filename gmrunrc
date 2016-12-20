@@ -43,6 +43,7 @@ URL_file = pcmanfm %s
 #URL_paci = ${TermExec} 'pacman -S %s'
 #URL_pacs = ${TermExec} 'pacman -Ss %s'
 URL_g = firefox 'https://encrypted.google.com/search?q=%s'
+URL_mpl = mpv --playlist /home/paseu/Videos/'%s'
 
 # extension handlers
 #EXT:doc,rtf = AbiWord %s
