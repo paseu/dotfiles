@@ -16,7 +16,7 @@ Left = 15
 History = 10000
 
 # Shows last history line selected when invoked
-ShowLast = 1
+ShowLast = 0
 
 # Show files starting with '.'
 # Default is 0 (off), set it to 1 if you want "hidden" files to show up
