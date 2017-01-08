@@ -236,6 +236,7 @@ assign [class="Steam"] $workspace3
 assign [class="wine"] $workspace3
 assign [class="Battle.net.exe"] $workspace3
 assign [class="Gimp"] $workspace4
+assign [class="mpv"] $workspace2
 
 # config window mode
 for_window [window_role="About"] floating enable
