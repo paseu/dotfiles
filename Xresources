@@ -1,4 +1,11 @@
 ! General
+Xft.dpi: 81.59
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
 !URxvt.termName:                        rxvt-256color
 !URxvt*loginShell:                      true
 URxvt.scrollBar:                       false
@@ -21,7 +28,7 @@ URxvt.matcher.button:                   1
 !  - use a bitmap font
 !URxvt.font:                            -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
 !  - use xft for drawing fonts
-URxvt.font:                            xft:Liberation Mono:style=Regular:size=10:antialias=false, xft:NanumGothicCoding:style=Regular:size=10:antialias=false
+URxvt.font:                            xft:Liberation Mono:style=Regular:size=10, xft:NanumGothicCoding:style=Regular:size=10
 URxvt.letterSpace:                     -1
 
 URxvt.boldFont:
