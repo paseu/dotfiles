@@ -213,7 +213,7 @@ bar {
           urgent_workspace   $base01 $base01    $base08
           }
         status_command i3status -c /home/paseu/.config/i3status/i3status.conf
-        tray_output primary
+#       tray_output primary
         mode        hide
 }
 
@@ -233,8 +233,8 @@ exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/1.png
 # assign app to workspace
 #assign [class="Clementine"] $workspace2
 assign [class="Steam"] $workspace3
-assign [class="wine"] $workspace3
-assign [class="Battle.net.exe"] $workspace3
+assign [class="Wine"] $workspace3
+#assign [instance="Battle.net.exe"] $workspace3
 assign [class="Gimp"] $workspace4
 assign [class="mpv"] $workspace2
 
