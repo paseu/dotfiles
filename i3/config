@@ -226,7 +226,6 @@ bindsym $mod+shift+x exec i3lock --color "$base01"
 # autostart
 # xdg autostart
 exec --no-startup-id dex -ae i3
-
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/1.png
 
@@ -234,6 +233,7 @@ exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/1.png
 #assign [class="Clementine"] $workspace2
 assign [class="Steam"] $workspace3
 assign [class="Wine"] $workspace3
+assign [instance="Diablo III.exe"] $workspace3
 #assign [instance="Battle.net.exe"] $workspace3
 assign [class="Gimp"] $workspace4
 assign [class="mpv"] $workspace2
