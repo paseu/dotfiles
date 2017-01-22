@@ -75,7 +75,7 @@ set background=dark " When set to "dark", Vim will try to use colors that look
 let g:solarized_termtrans=1
 colorscheme solarized
 
-"set mouse=a         " Enable the use of the mouse.
+set mouse=a         " Enable the use of the mouse.
 
 set pastetoggle=<F2>
 
