@@ -1,5 +1,5 @@
 ## Prevent Tearing
-#nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" >/dev/null 2>&1 & 
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" >/dev/null 2>&1 & 
 # no at-spi-bus-launcher error
 # rm /usr/share/dbus-1/services/org.a11y.*
 #export NO_AT_BRIDGE=1
@@ -30,6 +30,6 @@ urxvtd -q -o -f
 # compositor
 #xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &!
 #compton --config /dev/null -b 
-compton --config /home/paseu/.config/compton_i3.conf -b
+#compton --config /home/paseu/.config/compton_i3.conf -b
 
 # pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
