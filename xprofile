@@ -1,5 +1,5 @@
 ## Prevent Tearing
-nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" >/dev/null 2>&1 & 
+#nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" >/dev/null 2>&1 & 
 # no at-spi-bus-launcher error
 # rm /usr/share/dbus-1/services/org.a11y.*
 #export NO_AT_BRIDGE=1
