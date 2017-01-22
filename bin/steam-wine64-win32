@@ -1,0 +1,6 @@
+#!/bin/bash
+WINEARCH=win32 WINEPREFIX=/home/paseu/.win32 wine /home/paseu/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-cef-sandbox -no-dwrite >/dev/null 2>&1 &
+
+#wait
+
+#nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" 2>/dev/null &
