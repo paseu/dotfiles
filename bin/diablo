@@ -1,2 +1,2 @@
 #!/bin/bash
-killall compton && wine /home/paseu/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/Diablo\ III.exe -launch -opengl; wineserver -k && compton --config /home/paseu/.config/compton_i3.conf >/dev/null 2>&1 &
+wine /home/paseu/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/Diablo\ III.exe -launch -opengl; wineserver -k >/dev/null 2>&1 &
