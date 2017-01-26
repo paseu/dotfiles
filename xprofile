@@ -15,7 +15,7 @@ uim-xim &!
 export XMODIFIERS='@im=uim'
 
 # automount
-udiskie -As &!
+#udiskie -As &!
 
 # start a tmux session w/o attaching to the session(like daemon).
 #tmux new-session -s $USER -d
