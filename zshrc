@@ -1,10 +1,9 @@
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -53,7 +52,6 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -70,7 +68,7 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -83,7 +81,7 @@ fi
 alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
 alias tormpv="torsocks mpv --profile=ear"
 alias radio="mpv --profile=radio"
-alias sproc="ps -aux|grep -v "grep"|egrep -i --color"
+alias sproc="ps -aux|grep -v "grep"|grep -i --color"
 alias pacupdate="sudo pacman -Syu"
 alias pacinfo="pacman -Qi"
 alias paccheck="checkupdates && cower -u"

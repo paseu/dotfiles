@@ -44,7 +44,7 @@ bindsym $mod+minus scratchpad show
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-bindsym $mod+r exec gmrun
+bindsym $mod+d exec gmrun
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -99,7 +99,6 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-#
 
 set $workspace1 "main"
 set $workspace2 "studio"
@@ -167,7 +166,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-#bindsym $mod+r mode "resize"
+bindsym $mod+r mode "resize"
 
 
 set $base00 #101218
@@ -212,7 +211,7 @@ bar {
           inactive_workspace $base01 $base01    $base03
           urgent_workspace   $base01 $base01    $base08
           }
-        status_command i3status -c /home/paseu/.config/i3status/i3status.conf
+        status_command i3status -c /home/paseu/.config/i3status/config
 #       tray_output primary
         mode        hide
 }
@@ -224,26 +223,28 @@ bar {
 bindsym $mod+shift+x exec i3lock --color "$base01"
 
 # autostart
+exec --no-startup-id conky -c /home/paseu/dotfiles/conky/Gotham_compton -d
 # xdg autostart
 exec --no-startup-id dex -ae i3
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/1.png
+exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/2.jpg
 
 # assign app to workspace
-#assign [class="Clementine"] $workspace2
 assign [class="Steam"] $workspace3
-assign [class="Wine"] $workspace3
-assign [instance="Diablo III.exe"] $workspace3
+assign [instance="steam"] $workspace3
+#assign [class="Wine"] $workspace3
+#assign [instance="Diablo III.exe"] $workspace3
 #assign [instance="Battle.net.exe"] $workspace3
 assign [class="Gimp"] $workspace4
 assign [class="mpv"] $workspace2
 
 # config window mode
-for_window [window_role="About"] floating enable
 for_window [workspace="game"] floating enable
 #for_window [workspace="game"] fullscreen enable
-for_window [class="Galculator"] floating enable
-for_window [class="Galculator"] sticky enable
+for_window [window_role="About"] floating enable
+#for_window [class="Galculator"] floating enable
+#for_window [class="Galculator"] sticky enable
+for_window [class="gmrun"] floating enable
 for_window [instance="gmrun"] sticky enable
 #for_window [class="xpad"] floating enable
 #for_window [instance="xpad"] sticky enable

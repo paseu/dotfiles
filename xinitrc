@@ -54,12 +54,14 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
+## Sourcing xprofile from a session started with xinit
+#!/bin/sh
 
-## user-define
-
-#source xprofile
 # Make sure this is before the 'exec' command or it won't be sourced.
 [ -f /etc/xprofile ] && source /etc/xprofile
 [ -f ~/.xprofile ] && source ~/.xprofile
 
+## start de/wm
 exec i3
+# debug mode
+#exec i3 -V >> ~/i3log-$(date +'%F-%k-%M-%S') 2>&1

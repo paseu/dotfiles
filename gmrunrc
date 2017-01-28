@@ -44,6 +44,7 @@ URL_file = pcmanfm %s
 #URL_pacs = ${TermExec} 'pacman -Ss %s'
 URL_g = firefox 'https://encrypted.google.com/search?q=%s'
 URL_d = firefox 'dic.daum.net/search.do?q=%s'
+URL_arch = firefox 'https://encrypted.google.com/search?q=%s site:wiki.archlinux.org'
 URL_tor = firefox -no-remote -P tor %s
 URL_mpl = mpv --playlist /home/paseu/Videos/'%s'
 
