@@ -233,8 +233,8 @@ exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/2.jpg
 assign [class="Steam"] $workspace3
 assign [instance="steam"] $workspace3
 #assign [class="Wine"] $workspace3
-#assign [instance="Diablo III.exe"] $workspace3
-#assign [instance="Battle.net.exe"] $workspace3
+assign [instance="Diablo III.exe"] $workspace3
+assign [instance="Battle.net.exe"] $workspace3
 assign [class="Gimp"] $workspace4
 assign [class="mpv"] $workspace2
 
