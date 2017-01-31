@@ -227,7 +227,7 @@ exec --no-startup-id conky -c /home/paseu/dotfiles/conky/Gotham_compton -d
 # xdg autostart
 exec --no-startup-id dex -ae i3
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/2.jpg
+exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/2_2.jpg
 
 # assign app to workspace
 assign [class="Steam"] $workspace3
