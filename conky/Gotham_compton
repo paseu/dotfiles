@@ -19,7 +19,7 @@ conky.config = {
 
 	double_buffer = true,
 	minimum_width = 550, minimum_height = 5,
-	maximum_width = 700,
+	maximum_width = 750,
 	draw_shades = false,
 	draw_outline = false,
 	draw_borders = false,
@@ -44,7 +44,7 @@ conky.config = {
 conky.text = [[
 ${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}${font}
 ${voffset 2}${color FFA300}${goto 415}${offset 9}${font Ubuntu:pixelsize=10}$color${execi 300 /home/paseu/dotfiles/bin/accuweather "kr|wolmun-ri"}
-${voffset -7}${font GE Inspira:pixelsize=58}${goto 410}${time %A}${font}
+${voffset -5}${font GE Inspira:pixelsize=58}${goto 360}${time %A}${font}
 ${voffset 10}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 3600 checkupdates | wc -l}${goto 90}${color FFA300}AUR ${offset 11}${color}${execpi 3600 cower -uq | wc -l}${goto 200}${color FFA300}UTC ${offset 24}${color}${utime %dd %H:%M:%S}${goto 365}${color FFA300}EMAIL${offset 16}$color${execpi 300 python ~/.scripts/gmail.py}
 ${voffset 0}${offset 12}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 10}${color}${cpu cpu0} %${goto 90}${color FFA300}MEM ${offset 7}${color}${memperc} %${goto 200}${color FFA300}DISKIO ${offset 9}${color}${diskio}${goto 365}${color FFA300}dAta ${offset 22}${color}${fs_free /mnt/dAta}
 
