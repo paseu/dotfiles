@@ -88,6 +88,7 @@ alias paccheck="checkupdates && cower -u"
 alias mpl="mpv --playlist"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
 alias toriyou='torify youtube-dl -v'
+alias torimpv='torify mpv'
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
