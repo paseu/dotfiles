@@ -90,6 +90,9 @@ alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $e
 alias toriyou='torify youtube-dl -v'
 alias torimpv='torify mpv'
 
+# user define
+zstyle ':completion:*' rehash true
+
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
