@@ -237,6 +237,7 @@ assign [instance="Diablo III.exe"] $workspace3
 assign [instance="Battle.net.exe"] $workspace3
 assign [class="Gimp"] $workspace4
 assign [class="mpv"] $workspace2
+assign [instance="vlc"] $workspace2
 
 # config window mode
 for_window [workspace="game"] floating enable

@@ -83,7 +83,6 @@ alias tormpv="torsocks mpv --profile=ear"
 alias radio="mpv --profile=radio"
 alias sproc="ps -aux|grep -v "grep"|grep -i --color"
 alias pacupdate="sudo pacman -Syu"
-alias pacinfo="pacman -Qi"
 alias paccheck="checkupdates && cower -u"
 alias mpl="mpv --playlist"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
