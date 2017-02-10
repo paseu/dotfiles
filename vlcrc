@@ -1683,7 +1683,7 @@ marq-position=0
 freetype-font=Noto Sans CJK KR
 
 # Monospace Font (string)
-freetype-monofont=Noto Mono
+freetype-monofont=Noto Sans Mono CJK KR
 
 # Font size in pixels (integer)
 #freetype-fontsize=0
@@ -2475,13 +2475,13 @@ sout-x264-tune=film
 #subsdec-align=0
 
 # Subtitle text encoding (string)
-subsdec-encoding=ISO-2022-KR
+subsdec-encoding=CP949
 
 # UTF-8 subtitle autodetection (boolean)
 #subsdec-autodetect-utf8=1
 
 # Formatted Subtitles (boolean)
-#subsdec-formatted=1
+subsdec-formatted=0
 
 [speex] # Speex audio decoder
 
@@ -3818,10 +3818,10 @@ text-renderer=any
 #sub-track=-1
 
 # Audio language (string)
-#audio-language=
+audio-language=ja,jpn,jap,en,eng,any
 
 # Subtitle language (string)
-#sub-language=
+sub-language=ko,kor,kr,any
 
 # Menu language (string)
 #menu-language=
