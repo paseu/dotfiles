@@ -2481,7 +2481,7 @@ subsdec-encoding=CP949
 #subsdec-autodetect-utf8=1
 
 # Formatted Subtitles (boolean)
-subsdec-formatted=0
+#subsdec-formatted=1
 
 [speex] # Speex audio decoder
 
