@@ -79,14 +79,11 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
-alias tormpv="torsocks mpv --profile=ear"
 alias radio="mpv --profile=radio"
 alias sproc="ps -aux|grep -v "grep"|grep -i --color"
 alias pacupdate="sudo pacman -Syu"
 alias paccheck="checkupdates && cower -u"
-alias mpl="mpv --playlist"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
-alias torimpv='torify mpv'
 
 # user define
 zstyle ':completion:*' rehash true
