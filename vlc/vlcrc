@@ -3680,7 +3680,7 @@ http-reconnect=1
 #disable-screensaver=1
 
 # Show media title on video (boolean)
-video-title-show=0
+#video-title-show=1
 
 # Show video title for x milliseconds (integer)
 #video-title-timeout=5000
@@ -3767,7 +3767,7 @@ video-title-show=0
 #deinterlace-mode=blend
 
 # Video output module (string)
-vout=xcb_glx
+vout=any
 
 # Video filter module (string)
 #video-filter=

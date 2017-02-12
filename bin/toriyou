@@ -1,0 +1,2 @@
+#!/bin/bash
+torify youtube-dl --ignore-config -o "$1.%(ext)s" $2

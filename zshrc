@@ -86,7 +86,6 @@ alias pacupdate="sudo pacman -Syu"
 alias paccheck="checkupdates && cower -u"
 alias mpl="mpv --playlist"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
-alias toriyou='torify youtube-dl -v'
 alias torimpv='torify mpv'
 
 # user define
