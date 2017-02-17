@@ -9,8 +9,8 @@ Xft.rgba: rgb
 !URxvt.termName:                        rxvt-256color
 !URxvt*loginShell:                      true
 URxvt.scrollBar:                       false
-!URxvt.secondaryScreen:                 1
-!URxvt.secondaryScroll:                 1
+URxvt.secondaryScreen:                 0
+URxvt.secondaryScroll:                 0
 URxvt.saveLines:                       0
 URxvt.cursorBlink:                     true 
 URxvt.urgentOnBell:                    true
