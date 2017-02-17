@@ -77,7 +77,7 @@ filetype plugin indent on
 syntax on
 
 " for solarized color scheme
-"set background=dark
+set background=dark
 "colorscheme solarized
 
 nmap <CR> o<Esc>
