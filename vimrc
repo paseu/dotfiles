@@ -78,6 +78,6 @@ syntax on
 
 " for solarized color scheme
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 
 nmap <CR> o<Esc>
