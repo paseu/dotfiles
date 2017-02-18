@@ -21,7 +21,7 @@ export XMODIFIERS='@im=uim'
 #tmux new-session -s $USER -d
 
 # urxvtd
-urxvtd -q -o -f
+#urxvtd -q -o -f
 
 # conky
 #conky -c /home/$USER/.conky/Gotham_awesome -d 2>/dev/null
