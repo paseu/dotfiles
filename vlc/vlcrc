@@ -4400,13 +4400,13 @@ metadata-network-access=1
 #global-key-subpos-up=
 
 # Subtitle position up (string)
-#key-subpos-up=
+key-subpos-up=Shift+Up
 
 # Subtitle position down (string)
 #global-key-subpos-down=
 
 # Subtitle position down (string)
-#key-subpos-down=
+key-subpos-down=Shift+Down
 
 # Audio delay up (string)
 #global-key-audiodelay-up=
