@@ -1,3 +1,6 @@
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -50,6 +53,7 @@ DISABLE_AUTO_UPDATE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -58,11 +62,11 @@ plugins=(git)
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='vim'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -78,15 +82,6 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
-alias radio="mpv --profile=radio"
-alias sproc="ps -aux|grep -v "grep"|grep -i --color"
-alias pacupdate="sudo pacman -Syu"
-alias paccheck="checkupdates && cower -u"
-alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
-
-# user define
-zstyle ':completion:*' rehash true
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
@@ -94,3 +89,14 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+
+## user define
+alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
+alias radio="mpv --profile=radio"
+alias sproc="ps -aux|grep -v "grep"|grep -i --color"
+alias pacupdate="sudo pacman -Syu"
+alias paccheck="checkupdates && cower -u"
+alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
+
+# Persistent rehash
+zstyle ':completion:*' rehash true
