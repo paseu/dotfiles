@@ -90,7 +90,9 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
+
 ## user define
+# aliases
 alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
 alias radio="mpv --profile=radio"
 alias sproc="ps -aux|grep -v "grep"|grep -i --color"
