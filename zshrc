@@ -99,7 +99,8 @@ alias sproc="ps -aux|grep -v "grep"|grep -i --color"
 alias pacupdate="sudo pacman -Syu"
 alias paccheck="checkupdates && cower -u"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
-alias torimpv="torify mpv --ytdl-raw-options=ignore-config= "
+alias torim="torify mpv --ytdl-raw-options=ignore-config= "
+alias toriy="torify youtube-dl --ignore-config"
 
 # Persistent rehash
 zstyle ':completion:*' rehash true
