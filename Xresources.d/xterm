@@ -11,7 +11,7 @@ xterm*borderWidth: 0
 !XTerm*pointerColor: white
 !XTerm*pointerColorBackground: black
 !XTerm*cursorColor: yellow
-XTerm*cursorBlink: true
+!XTerm*cursorBlink: true
 
 ! UTF-8
 XTerm*locale: true

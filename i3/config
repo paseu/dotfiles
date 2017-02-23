@@ -33,8 +33,8 @@ floating_modifier $mod
 #bindsym $mod+Return exec urxvtc -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -n$USER -s$USER@$HOSTNAME"
 #bindsym $mod+Return exec urxvtc -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -s $USER"
 #bindsym $mod+Control+Return exec urxvtc
-bindsym $mod+Return exec xterm -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -s $USER"
-bindsym $mod+Control+Return exec xterm
+bindsym $mod+Return exec --no-startup-id xterm -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -s $USER"
+bindsym $mod+Control+Return exec --no-startup-id xterm
 
 # kill focused window
 bindsym $mod+c kill
@@ -248,7 +248,9 @@ for_window [workspace="game"] floating enable
 for_window [window_role="About"] floating enable
 #for_window [class="Galculator"] floating enable
 #for_window [class="Galculator"] sticky enable
-for_window [class="gmrun"] floating enable
 for_window [instance="gmrun"] sticky enable
 for_window [class="xpad"] floating enable
 #for_window [instance="xpad"] sticky enable
+
+# Set per-application border
+for_window [class="Gmrun"] border none
