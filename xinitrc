@@ -55,8 +55,6 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 ## Sourcing xprofile from a session started with xinit
-#!/bin/sh
-
 # Make sure this is before the 'exec' command or it won't be sourced.
 [ -f /etc/xprofile ] && source /etc/xprofile
 [ -f ~/.xprofile ] && source ~/.xprofile
