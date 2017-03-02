@@ -1,2 +1,2 @@
 #!/bin/bash
-wine /home/paseu/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/Diablo\ III.exe -launch -opengl; wineserver -k >/dev/null 2>&1 &
+wine /home/rienbar/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/Diablo\ III.exe -launch -opengl; wineserver -k >/dev/null 2>&1 &
