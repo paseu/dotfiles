@@ -1,3 +1,3 @@
 --netrc
 --mark-watched
---cookies /home/paseu/.config/youtube-dl/cookies.txt
+--cookies /home/rienbar/.config/youtube-dl/cookies.txt
