@@ -8,10 +8,12 @@ xterm*bellIsUrgent: true
 xterm*borderWidth: 0
 
 ! Config cursor
-!XTerm*pointerColor: white
-!XTerm*pointerColorBackground: black
-!XTerm*cursorColor: yellow
-!XTerm*cursorBlink: true
+!XTerm*pointerColor:            white
+!XTerm*pointerColorBackground:  black
+!XTerm*cursorColor:             yellow
+XTerm*cursorBlink:              true
+XTerm*cursorOnTime:             1200
+XTerm*cursorOffTime:            600
 
 ! UTF-8
 XTerm*locale: true
