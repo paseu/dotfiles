@@ -226,11 +226,11 @@ bar {
 bindsym $mod+shift+x exec i3lock --color "$base01"
 
 # autostart
-exec --no-startup-id conky -c /home/rienbar/dotfiles/conky/Gotham_compton -d
+exec --no-startup-id conky -c /home/paseu/dotfiles/conky/Gotham_compton -d
 # xdg autostart
 exec --no-startup-id dex -ae i3
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/rienbar/Pictures/.wallpaper/2_2.jpg
+exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/2_2.jpg
 
 # assign app to workspace
 assign [class="Steam"] $workspace3
