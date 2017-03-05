@@ -101,6 +101,7 @@ alias paccheck="checkupdates && cower -u"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
 alias torim="torify mpv --ytdl-raw-options=ignore-config= "
 alias toriy="torify youtube-dl --ignore-config"
+alias montemp="nvidia-smi -a|egrep -i current\ temp\|fan && sensors | egrep -i Physical"
 
 # Persistent rehash
 zstyle ':completion:*' rehash true

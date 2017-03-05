@@ -1,4 +1,6 @@
+.gitignore.swp
 systemd/user/default.target.wants/
 vim/.netrwhist
 gmail.py
-.gitignore.swp
+mpv/watch_later/
+youtube-dl/cookies.txt
