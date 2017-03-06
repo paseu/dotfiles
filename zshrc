@@ -102,7 +102,7 @@ alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $e
 alias torim="torify mpv --ytdl-raw-options=ignore-config= "
 alias toriy="torify youtube-dl --ignore-config"
 alias montemp="sensors | egrep -i Physical\|fan1 && nvidia-smi -a|egrep -i current\ temp\|fan"
-alias jrnlcheck="journalctl -b0|grep -v -i "tor"|grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??'"
+alias jctlcheck="journalctl -b0|grep -v -i "tor"|grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??'"
 
 # Persistent rehash
 zstyle ':completion:*' rehash true
