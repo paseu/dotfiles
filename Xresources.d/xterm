@@ -12,7 +12,7 @@ xterm*borderWidth: 0
 !XTerm*pointerColorBackground:  black
 !XTerm*cursorColor:             yellow
 XTerm*cursorBlink:              true
-XTerm*cursorOnTime:             1200
+XTerm*cursorOnTime:             600
 XTerm*cursorOffTime:            600
 
 ! UTF-8
