@@ -101,7 +101,7 @@ alias paccheck="checkupdates && cower -u"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
 alias torim="torify mpv --ytdl-raw-options=ignore-config= "
 alias toriy="torify youtube-dl --ignore-config"
-alias montemp="sensors | egrep -i package\|fan1 && nvidia-smi -a|egrep -i current\ temp\|fan"
+alias tempmon="sensors | egrep -i package\|fan1 && nvidia-smi -a|egrep -i current\ temp\|fan"
 alias jctlcheck="journalctl -b0|grep -v -i "tor"|grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??'"
 
 # Persistent rehash
