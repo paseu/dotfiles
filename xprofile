@@ -35,3 +35,6 @@ compton --config /dev/null --backend glx --paint-on-overlay --unredir-if-possibl
 #compton --config /home/paseu/.config/compton_i3.conf -b
 
 # pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
+
+# mouse accel speed
+xinput --set-prop 9 'libinput Accel Speed' -0.5
