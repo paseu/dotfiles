@@ -17,22 +17,8 @@ export XMODIFIERS='@im=uim'
 # automount
 #udiskie -As &!
 
-# start a tmux session w/o attaching to the session(like daemon).
-#tmux new-session -s $USER -d
-
-# urxvtd
-#urxvtd -q -o -f
-
-# conky
-#conky -c /home/$USER/.conky/Gotham_awesome -d 2>/dev/null
-# -> awesome/rc.lua
-
 # compositor
-#xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &!
-#compton --config /dev/null --backend xr_glx_hybrid --vsync-use-glfinish --paint-on-overlay --unredir-if-possible -b 
 compton --config /dev/null --backend glx --paint-on-overlay --unredir-if-possible --glx-no-stencil -b #--glx-no-rebind-pixmap -b #--glx-swap-method 1 -b 
-
-#compton --config /home/paseu/.config/compton_i3.conf -b
 
 # pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
 
