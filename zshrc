@@ -103,6 +103,7 @@ alias torim="torify mpv --ytdl-raw-options=ignore-config= "
 alias toriy="torify youtube-dl --ignore-config -o /mnt/dAta/multimedia/.temp/'%(title)s.%(ext)s'"
 alias tempmon="sensors | egrep -i package\|fan1 && nvidia-smi -a|egrep -i current\ temp\|fan"
 alias jctlcheck="journalctl -b0|grep -v -i "tor"|grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??'"
+alias mpv='mpv --no-fs'
 
 # Persistent rehash
 zstyle ':completion:*' rehash true
