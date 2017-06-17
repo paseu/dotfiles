@@ -1,5 +1,5 @@
 # mpv config
-player=mpv --no-resume-playback  
+player=mpv --no-resume-playback --sub-auto=exact
 
 # let player decide when to exit
 #player-no-close
