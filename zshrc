@@ -104,6 +104,7 @@ alias toriy="torify youtube-dl --ignore-config -o /mnt/DumP/.temp/'%(title)s.%(e
 alias tempmon="sensors | egrep -i package\|fan1 && nvidia-smi -a|egrep -i current\ temp\|fan"
 alias jctlcheck="journalctl -b0|grep -v -i "tor"|grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??'"
 alias mpv='mpv --no-fs'
+alias steam-wine='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe >/dev/null 2>&1 &'
 
 # Persistent rehash
 zstyle ':completion:*' rehash true
