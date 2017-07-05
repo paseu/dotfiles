@@ -1,4 +1,4 @@
-.gitignore.swp
+.*.swp
 systemd/user/default.target.wants/
 vim/.netrwhist
 gmail.py
