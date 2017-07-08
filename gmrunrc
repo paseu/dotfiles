@@ -45,7 +45,8 @@ URL_file = thunar %s
 URL_d = firefox 'https://duckduckgo.com/?q=%s'
 URL_g = firefox 'https://encrypted.google.com/search?q=%s'
 URL_dic = firefox 'dic.daum.net/search.do?q=%s'
-URL_arch = firefox 'https://encrypted.google.com/search?q=%s site:wiki.archlinux.org'
+URL_arch = firefox 'https://duckduckgo.com/?q=%s site:wiki.archlinux.org'
+#URL_arch = firefox 'https://encrypted.google.com/search?q=%s site:wiki.archlinux.org'
 URL_tor = firefox -no-remote -P tor -private %s
 
 # extension handlers
