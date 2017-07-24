@@ -4,5 +4,5 @@ echo "subtitle extension:"
 read ext
 while read oldname <&3 && read newname <&4
 do
-     ln -s "$oldname" ../"$newname".$ext
+     ln -s "$oldname" ../../"$newname".$ext
 done 3<oldname.txt 4<newname.txt
