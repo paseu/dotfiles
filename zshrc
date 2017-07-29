@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 alias pacclean="paccache -r && paccache -ruk0 && pacman -Qdt"
 alias radio="mpv --profile=radio"
 alias sproc="ps -aux|grep -v "grep"|grep -i --color"
-alias pacupdate="sudo pacman -Syu;killall conky; conky -c /home/paseu/dotfiles/conky/Gotham_compton -d"
+alias pacupdate="sudo pacman -Syu"
 alias paccheck="checkupdates && cower -u"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
 alias torim="torify mpv --ytdl-raw-options=ignore-config="
