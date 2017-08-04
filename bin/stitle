@@ -1,0 +1,2 @@
+#!/bin/bash
+find /mnt/DumP/ -type f -iname "*$1*$2*"
