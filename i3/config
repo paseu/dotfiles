@@ -233,6 +233,16 @@ exec --no-startup-id dex -ae i3
 exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/2_2.jpg
 
 # assign app to workspace
+#workspace1
+
+#workspace2
+assign [class="mpv"] $workspace2
+assign [instance="mpv"] $workspace2
+assign [instance="vlc"] $workspace2
+assign [class="Clementine"] $workspace2
+assign [instance="clementine"] $workspace2
+
+#workspace3
 assign [class="Steam"] $workspace3
 assign [instance="steam"] $workspace3
 assign [class="Steam.exe"] $workspace3
@@ -240,12 +250,9 @@ assign [instance="Steam.exe"] $workspace3
 assign [class="Wine"] $workspace3
 assign [instance="Diablo III.exe"] $workspace3
 assign [instance="Battle.net.exe"] $workspace3
+
+#workspace4
 assign [class="Gimp"] $workspace4
-assign [class="mpv"] $workspace2
-assign [instance="mpv"] $workspace2
-assign [instance="vlc"] $workspace2
-assign [class="Clementine"] $workspace2
-assign [instance="clementine"] $workspace2
 
 # config window mode
 for_window [workspace="game"] floating enable
