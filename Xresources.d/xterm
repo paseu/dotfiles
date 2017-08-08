@@ -35,7 +35,7 @@ xterm*VT100.geometry: 80x32
 
 ! PRIMARY and CLIPBOARD
 XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
-xterm*VT100.Translations: #override Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
+xterm*VT100.Translations: #override Ctrl Alt <Key>V: insert-selection(CLIPBOARD) \n Ctrl Alt <Key>C: copy-selection(CLIPBOARD)
 
 ! Default fonts
 xterm*faceName: DejaVu Sans Mono for Powerline:size=10:antialias=true
