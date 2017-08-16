@@ -1,6 +1,6 @@
 #!/bin/bash
 # extract a string at end of line after specific word(/)
-cat /home/paseu/Videos/$1|grep '/'|grep -o '[^/]*$' > newname.txt
+cat $1|grep '/'|grep -o '[^/]*$' > newname.txt
 find $(pwd)/ -maxdepth 1 -type f ! -name \*.txt > oldname.txt
 while read oldname <&3 && read newname <&4
 do
