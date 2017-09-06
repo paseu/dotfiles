@@ -234,6 +234,7 @@ exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/2_2.j
 
 # assign app to workspace
 #workspace1
+assign [class="Firefox"] $workspace1
 
 #workspace2
 assign [class="mpv"] $workspace2
