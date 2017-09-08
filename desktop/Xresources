@@ -1,0 +1,12 @@
+! General
+Xft.dpi: 81x80
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+!#include ".Xresources.d/rxvt-unicode"
+#include ".Xresources.d/xterm"
+#include ".Xresources.d/color"

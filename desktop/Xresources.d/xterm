@@ -1,0 +1,44 @@
+! TERM Environmental Variable
+xterm*termName: xterm-256color
+
+! Enable bell urgency
+xterm*bellIsUrgent: true
+
+! REmove black border
+xterm*borderWidth: 0
+
+! Config cursor
+!XTerm*pointerColor:            white
+!XTerm*pointerColorBackground:  black
+!XTerm*cursorColor:             yellow
+XTerm*cursorBlink:              true
+XTerm*cursorOnTime:             600
+XTerm*cursorOffTime:            600
+
+! UTF-8
+XTerm*locale: true
+xterm*utf8Title: true
+
+! Making xterms 'Alt' key behaves as on other terminal emulators
+XTerm*metaSendsEscape: 	true
+XTerm*eightBitInput: 	false
+
+! Fix the backspace key
+XTerm*backarrowKey: false
+XTerm*ttyModes: erase ^?
+
+! Scrolling
+Xterm*saveLines: 0
+
+! xterm size
+xterm*VT100.geometry: 80x32
+
+! PRIMARY and CLIPBOARD
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+xterm*VT100.Translations: #override Ctrl Alt <Key>V: insert-selection(CLIPBOARD) \n Ctrl Alt <Key>C: copy-selection(CLIPBOARD)
+
+! Default fonts
+xterm*faceName: DejaVu Sans Mono for Powerline:size=10:antialias=true
+xterm*font: 7x13
+xterm*faceNameDoublesize: Noto Sans Mono CJK KR
+xterm*faceSize: 8

@@ -1,0 +1,3 @@
+--netrc
+--mark-watched
+--cookies $HOME/.config/youtube-dl/cookies.txt
