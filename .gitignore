@@ -1,6 +1,6 @@
 .*.swp
-systemd/user/default.target.wants/
-vim/.netrwhist
+watch_later/
+cookies.txt
+default.target.wants/
+.netrwhist
 gmail.py
-mpv/watch_later/
-youtube-dl/cookies.txt
