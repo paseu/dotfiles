@@ -1,4 +1,0 @@
-#!/bin/bash
-echo convert from:
-read charset
-find . -maxdepth 1 -type f -name \*.smi -print -exec iconv -f $charset -t UTF-8 {} -o {}.utf8 \; && mkdir ./$charset/ && mv *.smi ./$charset/ && rename .smi.utf8 .smi *.utf8
