@@ -8,6 +8,9 @@
 #export QT_STYLE_OVERRIDE=adwaita
 #export QT_QPA_PLATFORMTHEME=qgnomeplatform
 
+#wifi systray
+nm-applet &
+
 # input method
 export GTK_IM_MODULE='uim'
 export QT_IM_MODULE='uim'
