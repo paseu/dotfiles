@@ -1,0 +1,26 @@
+## Prevent Tearing
+#nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" >/dev/null 2>&1 & 
+# no at-spi-bus-launcher error
+# rm /usr/share/dbus-1/services/org.a11y.*
+#export NO_AT_BRIDGE=1
+
+# QGtkStyle for Qt 5
+#export QT_STYLE_OVERRIDE=adwaita
+#export QT_QPA_PLATFORMTHEME=qgnomeplatform
+
+# input method
+export GTK_IM_MODULE='uim'
+export QT_IM_MODULE='uim'
+uim-xim &!
+export XMODIFIERS='@im=uim'
+
+# automount
+#udiskie -As &!
+
+# compositor
+compton --config /dev/null --backend glx --paint-on-overlay --unredir-if-possible --glx-no-stencil -b #--glx-no-rebind-pixmap -b #--glx-swap-method 1 -b 
+
+# pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
+
+# mouse accel speed
+#xinput --set-prop 9 'libinput Accel Speed' -0.5

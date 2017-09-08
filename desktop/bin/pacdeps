@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "install package(s) as dependency"
+read packages
+sudo pacman -S $packages && sudo pacman -D --asdeps $packages

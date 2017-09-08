@@ -1,0 +1,2 @@
+#!/bin/bash
+killall compton && steam; compton --config /home/paseu/.config/compton_i3.conf -b &
