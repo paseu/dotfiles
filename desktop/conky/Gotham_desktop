@@ -1,0 +1,55 @@
+conky.config = {
+	use_xft = true,
+	font = '123:size=8',
+	xftalpha = 0.1,
+	update_interval = 1,
+	total_run_times = 0,
+
+    background = false,
+    own_window_class = Conky,
+	own_window = false,
+    own_window_type = 'desktop',
+    draw_borders = false,
+    draw_outline = false,
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+--	own_window_colour = '#000000',
+	own_window_argb_visual = true,
+	own_window_argb_value = 0,
+
+	double_buffer = true,
+	minimum_width = 550, minimum_height = 5,
+	maximum_width = 750,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = false,
+	default_color = 'white',
+	default_shade_color = 'red',
+	default_outline_color = 'green',
+	alignment = 'top_left',
+	gap_x = 100,
+	gap_y = 100,
+	no_buffers = true,
+	uppercase = false,
+	cpu_avg_samples = 2,
+	net_avg_samples = 1,
+	override_utf8_locale = true,
+	use_spacer = 'right',
+
+
+--minimum_size 0 0
+};
+
+conky.text = [[
+${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}
+${voffset -12}${goto 522}${color FFA300}${font Ubuntu:pixelsize=11}UTC${offset 1} ${color}${utime %dd %H:%M:%S}
+${voffset -7}${font GE Inspira:pixelsize=58}${goto 500}${time %A}${font}
+${voffset 5}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 1800 checkupdates | wc -l}${goto 190}${color FFA300}AUR ${offset 11}${color}${execpi 1800 cower -uq | wc -l}${goto 300}${color FFA300}EMAIL${offset 16}$color${execpi 300 python ~/dotfiles/desktop/scripts/gmail.py}${voffset -7}${goto 460}${font Ubuntu:pixelsize=17}${execi 300 ~/dotfiles/desktop/bin/accuweather "kr|wolmun-ri"}
+${voffset -6}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 10}${color}${cpu cpu0} %${goto 190}${color FFA300}MEM ${offset 7}${color}${memperc} %${goto 300}${color FFA300}DISKIO ${offset 9}${color}${diskio}${goto 460}${color FFA300}dAta${offset 8}${color}${fs_free /mnt/dAta}${goto 550}${color FFA300}DumP${offset 7}${color}${fs_free /mnt/DumP}
+
+
+
+
+
+]];

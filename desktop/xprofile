@@ -18,7 +18,7 @@ export XMODIFIERS='@im=uim'
 #udiskie -As &!
 
 # compositor
-compton --config /dev/null --backend glx --paint-on-overlay --unredir-if-possible --glx-no-stencil -b #--glx-no-rebind-pixmap -b #--glx-swap-method 1 -b 
+#compton --config /dev/null --backend glx --paint-on-overlay --unredir-if-possible --glx-no-stencil -b #--glx-no-rebind-pixmap -b #--glx-swap-method 1 -b 
 
 # pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
 
