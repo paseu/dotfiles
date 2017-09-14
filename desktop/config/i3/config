@@ -255,6 +255,9 @@ assign [instance="Battle.net.exe"] $workspace3
 #workspace4
 assign [class="Gimp"] $workspace4
 
+#workspace5
+assign [instance="libreoffice"] $workspace5
+
 # config window mode
 for_window [workspace="game"] floating enable
 #for_window [workspace="game"] fullscreen enable
