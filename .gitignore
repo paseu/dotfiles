@@ -1,8 +1,10 @@
-.*.swp
-.netrwhist
+**/config/Clementine/
+**/config/Mousepad/accels.scm
+**/config/Thunar/accels.scm
+**/config/Thunar/renamerrc
+**/config/Trolltech.conf
 **/config/caffeine/
 **/config/chromium/
-**/config/Clementine/
 **/config/dconf/
 **/config/gtk-2.0/
 **/config/gtk-3.0/
@@ -11,16 +13,12 @@
 **/config/mcomix/
 **/config/menus/
 **/config/mimeapps.list
-**/config/Mousepad/accels.scm
 **/config/mpv/watch_later/
 **/config/pavucontrol.ini
 **/config/psd/
 **/config/pulse/
 **/config/skypeforlinux/
 **/config/systemd/user/default.target.wants/
-**/config/Thunar/accels.scm
-**/config/Thunar/renamerrc
-**/config/Trolltech.conf
 **/config/unity3d/
 **/config/user-dirs.dirs
 **/config/user-dirs.locale
@@ -28,3 +26,5 @@
 **/config/xfce4/
 **/config/youtube-dl/cookies.txt
 **/scripts/gmail.py
+.*.swp
+.netrwhist
