@@ -1,0 +1,23 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1488561456904581-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>mpv</icon>
+	<name>mpv hdmi</name>
+	<unique-id>1501684963884969-2</unique-id>
+	<command>/usr/bin/mpv %N --profile=hdmi</command>
+	<description>play files and directories by hdmi</description>
+	<patterns>*</patterns>
+	<directories/>
+	<video-files/>
+</action>
+</actions>

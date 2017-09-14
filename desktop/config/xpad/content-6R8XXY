@@ -1,0 +1,13 @@
+$cower -d youtube-dl-git
+
+$ cd  youtube-dl-git/src/youtube-dl/
+
+$ curl -o youtube_dl/extractor/pornhub.py https://raw.githubusercontent.com/snpwr/youtube-dl/07e5efbcb24235a70a28a4eedb88dc1e69656a38/youtube_dl/extractor/pornhub.py
+
+$ cd /path/to/youtube-dl-git/
+
+$ vim PKGBUILD
+delete source=(/..)/
+delete md5sum=(..)
+
+$makepkg -sri
