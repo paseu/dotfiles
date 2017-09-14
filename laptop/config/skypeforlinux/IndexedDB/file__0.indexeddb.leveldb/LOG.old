@@ -1,6 +1,0 @@
-2017/09/14-16:01:12.846 5857 Reusing MANIFEST /home/paseu/dotfiles/laptop/config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2017/09/14-16:01:12.846 5857 Recovering log #3
-2017/09/14-16:01:12.879 5857 Reusing old log /home/paseu/dotfiles/laptop/config/skypeforlinux/IndexedDB/file__0.indexeddb.leveldb/000003.log 
-2017/09/14-16:01:18.455 6044 Level-0 table #5: started
-2017/09/14-16:01:18.490 6044 Level-0 table #5: 991199 bytes OK
-2017/09/14-16:01:18.493 6044 Delete type=0 #3
