@@ -5,3 +5,5 @@ default.target.wants/
 .netrwhist
 gmail.py
 chromium
+accels.scm
+xfce4
