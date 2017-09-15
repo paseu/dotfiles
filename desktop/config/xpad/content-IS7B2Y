@@ -1,9 +1,0 @@
-Find broken symlinks and delete them
-
-If you don't want to delete them, but just want to list them, do
-find -L /path -type l
-
-If you want to delete them with confirmation first, do
-find -L /path -type l -exec rm -i {} +
-
-Using the -L flag follows symlinks, so the -type l test only returns true if the link can't be followed, or is a symlink to another broken symlink.
