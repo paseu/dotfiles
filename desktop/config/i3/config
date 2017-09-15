@@ -267,7 +267,7 @@ for_window [window_role="About"] floating enable
 for_window [instance="galculator"] floating enable
 for_window [instance="gmrun"] sticky enable
 for_window [class="xpad"] floating enable
-#for_window [instance="xpad"] sticky enable
+for_window [instance="uim-pref-gtk"] floating enable
 
 # Set per-application border
 for_window [class="Gmrun"] border none

@@ -1,9 +1,0 @@
-<linux=4.11.9-1 panic>
-hwdec=cuda-copy
-systemd=234.11-1
-psu=seasonic
-bios=f3
-device-mapper=2.02.173-1
-lvm2 2.02.173-1
-systemd=234.11-1
-libsystemd=234.11-1
