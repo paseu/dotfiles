@@ -27,3 +27,9 @@ export XMODIFIERS='@im=uim'
 
 # mouse accel speed
 #xinput --set-prop 9 'libinput Accel Speed' -0.5
+
+# wallpaper
+feh --bg-scale /home/paseu/Pictures/.wallpaper/2_2.jpg
+
+# system monitor
+sleep 1 && conky -c /home/paseu/dotfiles/laptop/conky/Gotham_laptop -d
