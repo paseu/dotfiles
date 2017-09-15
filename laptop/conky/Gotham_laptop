@@ -46,8 +46,7 @@ ${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84
 ${voffset -12}${goto 522}${color FFA300}${font Ubuntu:pixelsize=10}UTC${offset 1} ${color}${utime %dd %H:%M:%S}
 ${voffset -7}${font GE Inspira:pixelsize=58}${goto 465}${time %A}${font}
 ${voffset 5}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 1800 checkupdates | wc -l}${goto 190}${color FFA300}AUR ${offset 11}${color}${execpi 1800 cower -uq | wc -l}${goto 300}${color FFA300}EMAIL${offset 17}$color${execpi 300 python ~/dotfiles/laptop/scripts/gmail.py}${voffset -7}${goto 460}${font Ubuntu:pixelsize=17}${color FFA300}Battery: $color$battery_percent %
-${voffset -6}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 11}${color}${cpu cpu0} %${goto 190}${color FFA300}MEM ${offset 10}${color}${memperc} %${goto 300}${color FFA300}DISKIO ${offset 9}${color}${diskio}${goto 460}${color FFA300}Linux${offset 8}${color}${fs_free /}${goto 560}${color FFA300}MSWin${offset 7}${color}
-
+${voffset -6}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 11}${color}${cpu cpu0} %${goto 190}${color FFA300}MEM ${offset 10}${color}${memperc} %${goto 300}${color FFA300}DISKIO ${offset 9}${color}${diskio}${goto 460}${color FFA300}Root${offset 8}${color}${fs_free /}${goto 560}${color FFA300}
 
 
 
