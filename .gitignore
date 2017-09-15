@@ -6,6 +6,7 @@
 **/config/caffeine/
 **/config/chromium/
 **/config/dconf/
+**/config/galculator
 **/config/gtk-2.0/
 **/config/gtk-3.0/
 **/config/htop/
@@ -19,6 +20,7 @@
 **/config/pulse/
 **/config/skypeforlinux/
 **/config/systemd/user/default.target.wants/
+**/config/transmission/
 **/config/unity3d/
 **/config/user-dirs.dirs
 **/config/user-dirs.locale
