@@ -285,6 +285,7 @@ for_window [instance="uim-pref-gtk"] floating enable
 for_window [window_role="About"] floating enable
 for_window [window_role="GtkFileChooserDialog"] floating enable
 for_window [class="Gtkdialog"] floating enable
+for_window [instance="xpad"] floating enable
 
 # Set per-application border
 for_window [class="Gmrun"] border none
