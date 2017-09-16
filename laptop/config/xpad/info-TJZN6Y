@@ -1,12 +1,12 @@
 width 324
 height 200
-x 1593
-y 5
+x 1550
+y 651
 follow_font 1
 follow_color 1
 sticky 1
 hidden 0
 back rgb(255,238,153)
 text rgb(0,0,0)
-fontname URW Gothic 10
-content content-4BJ85Y
+fontname URW Gothic 9
+content content-3M0N6Y
