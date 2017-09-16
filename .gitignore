@@ -32,3 +32,4 @@
 **/scripts/gmail.py
 .*.swp
 .netrwhist
+**/config/chromium-back-ovfs/
