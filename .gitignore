@@ -4,6 +4,8 @@
 **/config/Thunar/renamerrc
 **/config/Trolltech.conf
 **/config/caffeine/
+**/config/chromium
+**/config/chromium-backup/
 **/config/chromium/
 **/config/dconf/
 **/config/galculator
