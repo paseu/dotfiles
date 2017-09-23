@@ -44,7 +44,7 @@ conky.config = {
 conky.text = [[
 ${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time %Y}
 ${voffset -12}${goto 522}${color FFA300}${font Ubuntu:pixelsize=11}UTC${offset 1} ${color}${utime %dd %H:%M:%S}
-${voffset -7}${font GE Inspira:pixelsize=58}${goto 470}${time %A}${font}
+${voffset -7}${font GE Inspira:pixelsize=58}${goto 480}${time %A}${font}
 ${voffset 5}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 1800 checkupdates | wc -l}${goto 190}${color FFA300}AUR ${offset 11}${color}${execpi 1800 cower -uq | wc -l}${goto 300}${color FFA300}EMAIL${offset 16}$color${execpi 300 python ~/dotfiles/desktop/scripts/gmail.py}${voffset -7}${goto 460}${font Ubuntu:pixelsize=17}${execi 300 ~/dotfiles/desktop/bin/accuweather "kr|wolmun-ri"}
 ${voffset -6}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}CPU ${offset 10}${color}${cpu cpu0} %${goto 190}${color FFA300}MEM ${offset 7}${color}${memperc} %${goto 300}${color FFA300}DISKIO ${offset 9}${color}${diskio}${goto 460}${color FFA300}dAta${offset 8}${color}${fs_free /mnt/dAta}${goto 550}${color FFA300}DumP${offset 7}${color}${fs_free /mnt/DumP}
 
