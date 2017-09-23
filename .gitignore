@@ -4,9 +4,8 @@
 **/config/Thunar/renamerrc
 **/config/Trolltech.conf
 **/config/caffeine/
-**/config/chromium
-**/config/chromium-backup/
-**/config/chromium/
+**/config/chromium*
+**/config/chromium-back-ovfs/
 **/config/dconf/
 **/config/galculator
 **/config/gtk-2.0/
@@ -32,4 +31,3 @@
 **/scripts/gmail.py
 .*.swp
 .netrwhist
-**/config/chromium-back-ovfs/
