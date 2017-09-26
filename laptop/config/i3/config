@@ -241,6 +241,7 @@ assign [instance="mpv"] $workspace2
 assign [instance="vlc"] $workspace2
 assign [class="Clementine"] $workspace2
 assign [instance="clementine"] $workspace2
+assign [instance="skype preview"] $workspace2
 
 #workspace3
 assign [class="Steam"] $workspace3
