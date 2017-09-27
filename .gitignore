@@ -28,6 +28,7 @@
 **/config/vlc/vlc-qt-interface.conf
 **/config/xfce4/
 **/config/youtube-dl/cookies.txt
+**/config/xpad/
 **/scripts/gmail.py
 .*.swp
 .netrwhist
