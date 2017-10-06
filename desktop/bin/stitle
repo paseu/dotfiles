@@ -1,2 +1,2 @@
 #!/bin/bash
-find /mnt/DumP/ -type f -iname "*$1*$2*"
+find /mnt/{DumP,dAta} -type f -iname "*$1*$2*"
