@@ -1,0 +1,6 @@
+#!/bin/bash
+while read source <&3
+do
+     curl -s http://tinyurl.com/api-create.php?url="$source" >> ./target.txt
+done 3<source.txt
+sed 's/http/\nhttp/g' target.txt -i
