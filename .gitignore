@@ -30,6 +30,7 @@
 **/config/xfce4/
 **/config/xpad/
 **/config/youtube-dl/cookies.txt
+**/config/youtube-dl/cookies.txt.bak
 **/scripts/gmail.py
 .*.swp
 .netrwhist
