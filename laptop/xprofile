@@ -33,3 +33,6 @@ feh --bg-scale /home/paseu/Pictures/.wallpaper/2_2.jpg
 
 # system monitor
 sleep 2 && conky -c /home/paseu/dotfiles/laptop/conky/Gotham_laptop -d
+
+# disable touchpad while typing
+syndaemon -i 3 -t -K -R -d
