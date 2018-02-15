@@ -24,6 +24,7 @@ export XMODIFIERS='@im=uim'
 #compton --config /dev/null --backend glx --paint-on-overlay --unredir-if-possible --glx-no-stencil --glx-no-rebind-pixmap -b #--glx-swap-method 1 -b 
 
 # pasystray should be started by dm, not after[by] awesome wm, 'casue it does not show pasystray's tray icon
+pasystray &!
 
 # mouse accel speed
 #xinput --set-prop 9 'libinput Accel Speed' -0.5
