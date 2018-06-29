@@ -32,5 +32,6 @@
 **/config/youtube-dl/cookies.txt
 **/config/youtube-dl/cookies.txt.bak
 **/scripts/gmail.py
+**/scripts/notify-test
 .*.swp
 .netrwhist
