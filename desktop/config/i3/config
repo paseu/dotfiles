@@ -48,6 +48,7 @@ bindsym $mod+minus scratchpad show
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec --no-startup-id gmrun
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -262,7 +263,7 @@ assign [instance="libreoffice"] $workspace5
 for_window [workspace="game"] floating enable
 for_window [window_role="About"] floating enable
 for_window [instance="galculator"] floating enable
-for_window [instance="gmrun"] sticky enable
+for_window [instance="gmrun"] sticky enable move left 745px,move up 495px
 for_window [instance="uim-pref-gtk"] floating enable
 for_window [instance="xpad"] floating enable
 for_window [window_role="pop-up"] floating enable
