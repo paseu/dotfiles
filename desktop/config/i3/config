@@ -217,7 +217,9 @@ bar {
           }
 	status_command i3status -c /home/paseu/.config/i3status/config
 #       tray_output primary
-        mode        hide
+
+## comment out below for hide taskbar
+#       mode        hide
 }
 
 
