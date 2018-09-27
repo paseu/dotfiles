@@ -265,6 +265,8 @@ assign [class="Gimp"] $workspace4
 assign [instance="libreoffice"] $workspace5
 
 # config window mode
+#for_window [class="^.*"] border pixel 0 #disable window titlebars and gaps between containers.
+new_window 1pixel #disable titlebars only.
 for_window [workspace="game"] floating enable
 for_window [window_role="About"] floating enable
 for_window [instance="galculator"] floating enable
