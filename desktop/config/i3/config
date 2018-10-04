@@ -191,8 +191,9 @@ set $base0E #c0b7f9
 set $base0F #fcc09e
 
 # Widow Colours
-#                       border  background text    indicator
-client.focused          $base01 $base01    $base07 $base0F
+#                       border  background text    indicator child_border
+client.focused          #4c7899 #285577    #ffffff #2e9ef4   #285577
+#client.focused          $base01 $base01    $base07 $base0F
 client.focused_inactive $base02 $base02    $base03 $base0F
 client.unfocused        $base02 $base02    $base03 $base0F
 client.urgent           $base02 $base08    $base00 $base0F
