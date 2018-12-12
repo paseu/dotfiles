@@ -8,9 +8,10 @@ TermExec = ${Terminal} -e
 AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man
 
 # Set window geometry (except height)
-Width = 400
-Top = 15
-Left = 15
+#Width = 400
+#Top = 15
+#Left = 15
+
 # Place window centered by the size of screen
 CenteredByWidth = 0
 CenteredByHeight = 0
