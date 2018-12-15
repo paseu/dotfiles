@@ -42,7 +42,7 @@ conky.config = {
 };
 
 conky.text = [[
-${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -9}${color EAEAEA}${font GE Inspira:pixelsize=32}${time  %B} ${time %Y}
+${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${goto 456}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -9}${color EAEAEA}${font GE Inspira:pixelsize=32}${time  %B} ${time %Y}
 ${voffset -5}${goto 466}${font GE Inspira:pixelsize=51}${time %A}${font}
 ${voffset -0}${goto 456}${font GE Inspira:style=Bold:pixelsize=11}${execi 300 /home/paseu/dotfiles/desktop/scripts/weather.sh "37.6487936,127.307776" | rev | cut -c2- | rev}°C
 ${voffset -1}${goto 456}${color FFA300}${font Ubuntu:pixelsize=11}UTC${offset 1} ${color}${utime %H:%M  D%d}
