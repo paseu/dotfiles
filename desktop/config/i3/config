@@ -273,7 +273,7 @@ smart_borders on
 for_window [workspace="game"] floating enable
 for_window [window_role="About"] floating enable
 for_window [instance="galculator"] floating enable
-for_window [instance="gmrun"] sticky enable move left 745px,move up 495px
+for_window [instance="gmrun"] sticky enable, move absolute position 25 px 25 px
 for_window [instance="uim-pref-gtk"] floating enable
 for_window [instance="xpad"] floating enable
 for_window [window_role="pop-up"] floating enable
