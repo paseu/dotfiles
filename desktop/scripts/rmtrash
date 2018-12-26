@@ -1,4 +1,4 @@
 #!/bin/bash
 sleep 5s
-find /mnt/DumP/.temp/real -mindepth 2 -type f ! -name \*.mp4 ! -name \*.avi ! -name \*.webm ! -name \*.wmv -exec rm {} \;
+find /mnt/DumP/.temp/real -type f ! -name \*.mp4 ! -name \*.avi ! -name \*.webm ! -name \*.wmv ! -name \*.mkv ! -name \*.ass ! -name \*.smi -exec rm {} \;
 exit
