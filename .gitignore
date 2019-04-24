@@ -1,9 +1,11 @@
 **/config/Clementine/
 **/config/Mousepad/accels.scm
+**/config/PawelStolowski/
 **/config/QtProject.conf
 **/config/Thunar/accels.scm
 **/config/Thunar/renamerrc
 **/config/Trolltech.conf
+**/config/arkrc
 **/config/caffeine/
 **/config/chromium*
 **/config/chromium-back-ovfs/

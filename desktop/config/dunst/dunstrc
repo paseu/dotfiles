@@ -176,7 +176,8 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path= /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+#    icon_path= /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path= /usr/share/icons/Paper/16x16/apps/
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
