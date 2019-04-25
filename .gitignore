@@ -11,6 +11,7 @@
 **/config/chromium-back-ovfs/
 **/config/dconf/
 **/config/galculator
+**/config/gomics/
 **/config/gtk-2.0/
 **/config/gtk-3.0/
 **/config/htop/
