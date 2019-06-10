@@ -1,4 +1,5 @@
 **/config/Clementine/
+**/config/GIMP/
 **/config/Mousepad/accels.scm
 **/config/PawelStolowski/
 **/config/QtProject.conf
@@ -7,6 +8,7 @@
 **/config/Trolltech.conf
 **/config/arkrc
 **/config/caffeine/
+**/config/cef_user_data/
 **/config/chromium*
 **/config/chromium-back-ovfs/
 **/config/dconf/
