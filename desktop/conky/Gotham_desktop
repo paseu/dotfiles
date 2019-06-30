@@ -43,7 +43,7 @@ conky.config = {
 
 conky.text = [[
 ${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${goto 456}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} ${voffset -9}${color EAEAEA}${font GE Inspira:pixelsize=32}${time  %B} ${time %Y}
-${voffset -5}${goto 505}${font GE Inspira:pixelsize=51}${time %A}${font}
+${voffset -5}${goto 510}${font GE Inspira:pixelsize=51}${time %A}${font}
 ${voffset -0}${goto 456}${font GE Inspira:style=Bold:pixelsize=11}${execi 300 /home/paseu/dotfiles/desktop/scripts/weather.sh "37.6487936,127.307776" | rev | cut -c2- | rev}°C
 ${voffset -1}${goto 456}${color FFA300}${font Ubuntu:pixelsize=11}UTC${offset 1} ${color}${utime %H:%M  D%d}
 ${voffset -14}${offset 15}${font Ubuntu:pixelsize=11}${color FFA300}PKG ${offset 11}${color}${execpi 1800 checkupdates | wc -l}${goto 190}${color FFA300}AUR ${offset 11}${color}${execpi 1800 cower -uq | wc -l}${goto 300}${color FFA300}EMAIL${offset 16}$color${execpi 300 python ~/dotfiles/desktop/scripts/gmail.py}
