@@ -1,6 +1,6 @@
 decorations 0
 height 200
-width 200
+width 324
 confirm_destroy 1
 edit_lock 0
 sticky_on_start 1
@@ -11,9 +11,9 @@ use_back 1
 text rgb(0,0,0)
 use_text 1
 fontname URW Gothic 11
-toolbar 1
+toolbar 0
 auto_hide_toolbar 1
-scrollbar 1
+scrollbar 0
 buttons New, Delete, Separator, Cut, Copy, Paste, Separator, Undo, Redo
 autostart_wait_systray 1
 autostart_delay 0
