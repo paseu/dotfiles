@@ -107,7 +107,7 @@ alias jctlcheck="journalctl -b-0 | grep -i -v 'xylitol kernel: RAS: Correctable 
 #alias jctlcheck="journalctl -b-0 | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|unable\|invalid\|not supported'"
 #alias jctlmon="journalctl -b-0 -f | grep -i -v 'kernel: RAS: Correctable Errors collector initialized.' | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|ignor'"
 alias jctlmon="journalctl -b-0 -f | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|ignor'"
-alias mpv='mpv --no-fs'
+alias mpv='/home/paseu/dotfiles/desktop/scripts/mpv_thumbnail --no-fs'
 #alias prename='perl-rename'
 
 # Persistent rehash
