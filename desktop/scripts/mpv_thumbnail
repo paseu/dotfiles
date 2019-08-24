@@ -1,3 +1,5 @@
 #!/bin/bash
 trap 'rm -rf "/tmp/my_mpv_thumbnails"' EXIT
-mpv $@
+#mpv $@
+mpv "$@"
+
