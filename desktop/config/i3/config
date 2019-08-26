@@ -244,17 +244,13 @@ exec --no-startup-id dex -ae i3
 #assign [class="Firefox"] $workspace1
 
 #workspace2
-assign [class="mpv"] $workspace2
 assign [instance="mpv"] $workspace2
 assign [instance="vlc"] $workspace2
-assign [class="Clementine"] $workspace2
 assign [instance="clementine"] $workspace2
+for_window [class="plexmediaplayer"] move to workspace $workspace2
 
 #workspace3
 assign [class="Steam"] $workspace3
-assign [instance="steam"] $workspace3
-assign [class="Steam.exe"] $workspace3
-assign [instance="Steam.exe"] $workspace3
 assign [class="Wine"] $workspace3
 assign [instance="Diablo III.exe"] $workspace3
 assign [instance="Battle.net.exe"] $workspace3
