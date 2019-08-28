@@ -244,7 +244,7 @@ exec --no-startup-id dex -ae i3
 #assign [class="Firefox"] $workspace1
 
 #workspace2
-assign [instance="mpv"] $workspace2
+assign [class="mpv"] $workspace2
 assign [instance="vlc"] $workspace2
 assign [instance="clementine"] $workspace2
 for_window [class="plexmediaplayer"] move to workspace $workspace2
