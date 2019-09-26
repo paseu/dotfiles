@@ -1,4 +1,4 @@
-<?xml encoding="UTF-8" version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
 	<icon>utilities-terminal</icon>
@@ -24,7 +24,7 @@
 	<icon>mpv</icon>
 	<name>mpv</name>
 	<unique-id>1516022537623107-3</unique-id>
-	<command>/usr/bin/mpv %N --player-operation-mode=pseudo-gui</command>
+	<command>/usr/bin/mpv %N --load-scripts=no --osc=yes --player-operation-mode=pseudo-gui</command>
 	<description></description>
 	<patterns>*</patterns>
 	<directories/>
