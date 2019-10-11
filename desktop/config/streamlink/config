@@ -1,5 +1,5 @@
 # mpv config
-player=/usr/bin/mpv --load-scripts=no --osc=yes --no-resume-playback --sub-auto=exact
+player=/usr/bin/mpv --load-scripts=no --osc=yes --no-resume-playback --sub-auto=exact --no-input-default-bindings --no-config
 
 # let player decide when to exit
 #player-no-close

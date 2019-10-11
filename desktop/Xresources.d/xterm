@@ -5,7 +5,7 @@ xterm*termName: xterm-256color
 xterm*bellIsUrgent: true
 
 ! REmove black border
-xterm*borderWidth: 0
+!xterm*borderWidth: 0
 
 ! Config cursor
 !XTerm*pointerColor:            white
@@ -31,7 +31,7 @@ XTerm*ttyModes: erase ^?
 Xterm*saveLines: 0
 
 ! xterm size
-xterm*VT100.geometry: 80x32
+!xterm*VT100.geometry: 80x32
 
 ! PRIMARY and CLIPBOARD
 XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
