@@ -85,7 +85,7 @@ bindsym $mod+b split v
 bindsym $mod+v split h
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+#bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+t layout stacking
@@ -264,8 +264,11 @@ assign [instance="libreoffice"] $workspace5
 # config window mode
 #for_window [class="^.*"] border pixel 0 #disable window titlebars and gaps between containers.
 new_window 1pixel #disable titlebars only.
-#smart borders
+
+##smart borders
 smart_borders on
+#smart_borders no_gaps
+
 for_window [workspace="game"] floating enable
 for_window [window_role="About"] floating enable
 for_window [instance="galculator"] floating enable
