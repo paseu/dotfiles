@@ -100,15 +100,15 @@ alias paccheck="checkupdates; auracle sync"
 alias pacupdate="sudo pacman -Syu"
 alias vimenc='vim -c '\''let $enc = &fileencoding | execute "!echo Encoding:  $enc" | q'\'''
 alias torim="torify mpv --ytdl-raw-options=ignore-config="
-alias toriy="torify youtube-dl --ignore-config -o /mnt/dAta/.temp/hub/'%(title)s.%(ext)s'"
+alias toriu="torify youtube-dl --ignore-config -o /mnt/dAta/.temp/hub/'%(title)s.%(ext)s'"
 alias youtube-dl-ignore="youtube-dl --ignore-config -o /mnt/DumP/.temp/'%(title)s.%(ext)s'"
 alias tempmon="watch -n 1 'sensors | egrep -i package\|fan1 && nvidia-smi -a|egrep -i current\ temp\|fan'"
-alias jctlcheck="journalctl -b-0 | grep -i -v 'xylitol kernel: RAS: Correctable Errors collector initialized.\|xylitol tor\|xylitol kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel\|ACPI Warning: SystemIO range\|xylitol kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.\|xylitol kernel: ehci-pci 0000:00:1a.0: cache line size of 64 is not supported\|xylitol kernel: xhci_hcd 0000:00:14.0: cache line size of 64 is not supported\|xylitol kernel: ehci-pci 0000:00:1d.0: cache line size of 64 is not supported\|xylitol kernel: iTCO_wdt: unable to reset NO_REBOOT flag, device disabled by hardware/BIOS\|xylitol colord' | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|unable\|invalid\|not supported'"
+alias jctlcheck="journalctl -b-0 | grep -i -v 'xylitol kernel: RAS: Correctable Errors collector initialized.\|xylitol tor\|xylitol kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel\|ACPI Warning:\|SystemIO\|xylitol kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.\|xylitol kernel: ehci-pci 0000:00:1a.0: cache line size of 64 is not supported\|xylitol kernel: xhci_hcd 0000:00:14.0: cache line size of 64 is not supported\|xylitol kernel: ehci-pci 0000:00:1d.0: cache line size of 64 is not supported\|xylitol kernel: iTCO_wdt: unable to reset NO_REBOOT flag, device disabled by hardware/BIOS\|xylitol colord' | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|unable\|invalid\|not supported'"
 #alias jctlcheck="journalctl -b-0 | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|unable\|invalid\|not supported'"
 #alias jctlmon="journalctl -b-0 -f | grep -i -v 'kernel: RAS: Correctable Errors collector initialized.' | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|ignor'"
 alias jctlmon="journalctl -b-0 -f | grep -i 'warn\|error\|fail\|critical\|fatal\|already\|??\|ignor'"
-#alias mpv='/home/paseu/dotfiles/desktop/scripts/mpv_thumbnail --no-fs'
-alias mpv='/usr/bin/mpv --no-fs'
+alias mpvth='/home/paseu/dotfiles/desktop/scripts/mpv_thumbnail --no-fs --no-osc'
+alias mpv='/usr/bin/mpv --no-fs --load-scripts=no'
 #alias prename='perl-rename'
 
 # Persistent rehash

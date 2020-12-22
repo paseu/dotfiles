@@ -1,5 +1,5 @@
 #!/bin/bash
-trap 'rm -rf "/tmp/my_mpv_thumbnails"' EXIT
+trap 'rm -rf "/tmp/mpv_thumbs_cache"' EXIT
 #mpv $@
-mpv "$@"
+mpv --no-osc "$@" 
 

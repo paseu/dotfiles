@@ -12,16 +12,6 @@
 </action>
 <action>
 	<icon>mpv</icon>
-	<name>mpv hdmi</name>
-	<unique-id>1516022493087025-1</unique-id>
-	<command>/usr/bin/mpv %N --player-operation-mode=pseudo-gui --profile=hdmi</command>
-	<description>play files and directories by hdmi</description>
-	<patterns>*</patterns>
-	<directories/>
-	<video-files/>
-</action>
-<action>
-	<icon>mpv</icon>
 	<name>mpv</name>
 	<unique-id>1516022537623107-3</unique-id>
 	<command>/usr/bin/mpv %N --load-scripts=no --osc=yes --player-operation-mode=pseudo-gui</command>

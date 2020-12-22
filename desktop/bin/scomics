@@ -1,0 +1,2 @@
+#!/bin/bash
+find /mnt/dAta/.temp/comics/ -type f -iname "*$1*$2*"|sort -r
