@@ -9,5 +9,5 @@ player=/usr/bin/mpv --load-scripts=no --no-resume-playback --sub-auto=exact --no
 
 # new twitch API
 #http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6
-title=[{author}] {title}
+title="{author}" {title}
 #player-args="--force-media-title=streamlink" {filename}
