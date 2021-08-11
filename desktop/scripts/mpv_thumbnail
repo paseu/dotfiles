@@ -1,5 +1,5 @@
 #!/bin/bash
 trap 'rm -rf "/tmp/mpv_thumbs_cache"' EXIT
 #mpv $@
-mpv --no-osc "$@" 
+mpv --load-scripts --no-osc "$@" 
 

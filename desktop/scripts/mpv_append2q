@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/home/paseu/.config/mpv/tools/umpv "$@"
+rm -fr "/tmp/mpv_thumbs_cache"

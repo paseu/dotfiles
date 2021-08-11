@@ -462,7 +462,7 @@ local thumbnailer_options = {
 
 read_options(thumbnailer_options, SCRIPT_NAME)
 --[ FileConcat-E src/options.lua HASH:43289ede028e21aaafa333306430507752fcc218de48b5aac9b89a2b2ba64da2 ]--
---[ FileConcat-S src/thumbnailer_server.lua HASH:21bddbc128bd4957b895d159ba5e01ce4b4b6d679d1478a18345b1c842207021 ]--
+--[ FileConcat-S src/thumbnailer_server.lua HASH:cc61c94299c711a70559d79015213453147415d9508acff5e3b117ea8929d78a ]--
 function skip_nil(tbl)
     local n = {}
     for k, v in pairs(tbl) do
@@ -524,7 +524,7 @@ function create_thumbnail_mpv(file_path, timestamp, size, output_path, options)
         "--vf-add=format=bgra",
         "--of=rawvideo",
         "--ovc=rawvideo",
-        "--o=" .. output_path
+        ("--o=%s"):format(output_path)
     })
     return utils.subprocess({args=mpv_command})
 end
@@ -736,4 +736,4 @@ mp.register_script_message("mpv_thumbnail_script-slaved", function()
     msg.debug("Successfully registered with master")
     register_timer:stop()
 end)
---[ FileConcat-E src/thumbnailer_server.lua HASH:21bddbc128bd4957b895d159ba5e01ce4b4b6d679d1478a18345b1c842207021 ]--
+--[ FileConcat-E src/thumbnailer_server.lua HASH:cc61c94299c711a70559d79015213453147415d9508acff5e3b117ea8929d78a ]--
