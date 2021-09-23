@@ -38,7 +38,7 @@ XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT
 xterm*VT100.Translations: #override Ctrl Alt <Key>V: insert-selection(CLIPBOARD) \n Ctrl Alt <Key>C: copy-selection(CLIPBOARD)
 
 ! Default fonts
-xterm*faceName: DejaVu Sans Mono for Powerline:size=10:antialias=true
+xterm*faceName: DejaVu Sans Mono Book:size=10:antialias=true
 xterm*font: 7x13
 xterm*faceNameDoublesize: Noto Sans Mono CJK KR
 xterm*faceSize: 8

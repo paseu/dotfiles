@@ -113,3 +113,4 @@ alias mpv='/usr/bin/mpv --no-fs --load-scripts=no --osc'
 
 # Persistent rehash
 zstyle ':completion:*' rehash true
+
