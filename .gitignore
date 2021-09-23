@@ -29,6 +29,7 @@
 **/config/pulse/
 **/config/skypeforlinux/
 **/config/systemd/user/default.target.wants/
+**/config/TabNine/
 **/config/tint2/
 **/config/transmission/
 **/config/unity3d/
