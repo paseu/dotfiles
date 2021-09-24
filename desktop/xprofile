@@ -9,10 +9,17 @@
 #export QT_QPA_PLATFORMTHEME=qgnomeplatform
 
 # input method
+# for uim
 export GTK_IM_MODULE='uim'
 export QT_IM_MODULE='uim'
 uim-xim &!
 export XMODIFIERS='@im=uim'
+## for nimf
+#export GTK_IM_MODULE=nimf
+#export QT4_IM_MODULE="nimf"
+#export QT_IM_MODULE=nimf
+#export XMODIFIERS="@im=nimf"
+#nimf
 
 # automount
 #udiskie -As &!
@@ -31,3 +38,4 @@ feh --bg-scale /home/paseu/Pictures/.wallpaper/365528.jpg
 # system monitor
 sleep 2 && conky -c /home/paseu/dotfiles/desktop/conky/Gotham_desktop -d
 
+export $(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)
