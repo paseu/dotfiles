@@ -1,2 +1,5 @@
 #!/bin/bash
-expac -HM "%-20n\t%10d" $( comm -23 <(pacman -Qqt|sort) <(pacman -Qqg base base-devel xorg-apps|sort) )
+expac -HM "%-20n\t%10d" $( comm -23 <(pacman -Qqt|sort) <(pacman -Qqg base base-devel xorg-apps|sort) ) > /tmp/uusdpac_1.txt
+expac -H M '%-20n\t%10d' $( comm -12 <(pacman -Qq | sort) <(pacman -Sql core | sort) ) > /tmp/uusdpac_2.txt
+grep -v -f /tmp/uusdpac_2.txt /tmp/uusdpac_1.txt
+rm /tmp/uusdpac_1.txt /tmp/uusdpac_2.txt 
