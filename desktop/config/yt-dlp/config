@@ -1,3 +1,3 @@
 --netrc
 --mark-watched
---cookies $HOME/.config/youtube-dl/cookies.txt
+--cookies-from-browser firefox:/home/paseu/.mozilla/firefox/184sl6uk.default-1540853031782
