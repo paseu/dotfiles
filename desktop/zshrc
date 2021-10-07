@@ -110,7 +110,6 @@ alias jctlmon="journalctl -b-0 -f | grep -i 'warn\|error\|fail\|critical\|fatal\
 #alias mpvth='/home/paseu/dotfiles/desktop/scripts/mpv_thumbnail --no-fs --no-osc'
 alias mpv='/usr/bin/mpv --no-fs --load-scripts=no --osc'
 #alias prename='perl-rename'
-
 # Persistent rehash
 zstyle ':completion:*' rehash true
 
