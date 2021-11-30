@@ -1,0 +1,13 @@
+#!/bin/bash
+
+runcmd="$1"
+wmclass="$2"
+
+function switch() {
+    wmctrl -xa "$wmclass"
+}
+
+if ! switch; then
+    eval "$runcmd" &
+    while ! switch; do sleep 0.1; done
+fi

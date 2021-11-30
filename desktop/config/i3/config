@@ -47,7 +47,8 @@ bindsym $mod+minus scratchpad show
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec --no-startup-id gmrun
+#launch gmrun, if there is already gmrun instance, switch to it.
+bindsym $mod+d exec --no-startup-id ~/.config/i3/switchto "gmrun" "Gmrun"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -276,7 +277,7 @@ for_window [workspace="game"] floating enable
 for_window [window_role="About"] floating enable
 for_window [title="About Mozilla Firefox"] floating enable
 for_window [instance="galculator"] floating enable
-for_window [class="Gmrun"] sticky enable, move absolute position 30 px 20 px
+for_window [class="Gmrun"] sticky enable
 for_window [instance="uim-pref-gtk"] floating enable
 for_window [instance="xpad"] floating enable
 for_window [window_role="pop-up"] floating enable
