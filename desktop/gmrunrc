@@ -11,6 +11,7 @@ AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man
 #width = 400
 #top = 15
 #left = 15
+Geometry = 400x0+15+15
 
 ## Place window centered by the size of screen
 #CenteredByWidth = 0
