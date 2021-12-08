@@ -235,7 +235,7 @@ bar {
 bindsym $mod+shift+x exec i3lock --color "$base01"
 
 # autostart
-#exec --no-startup-id conky -c /home/paseu/dotfiles/desktop/conky/Gotham_desktop -d
+exec --no-startup-id conky -c /home/paseu/dotfiles/desktop/conky/Gotham_desktop -d
 # xdg autostart
 exec --no-startup-id dex -ae i3
 # wallpaper
