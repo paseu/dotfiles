@@ -38,4 +38,3 @@ feh --bg-scale /home/paseu/Pictures/.wallpaper/365528.jpg
 # system monitor
 #sleep 2 && conky -c /home/paseu/dotfiles/desktop/conky/Gotham_desktop -d
 
-export $(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)
