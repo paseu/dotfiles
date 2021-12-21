@@ -6,18 +6,14 @@
 Terminal = xterm
 TermExec = ${Terminal} -e
 AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man
-
-# Set window geometry (except height)
-#width = 400
-#top = 15
-#left = 15
+# Set window geometry
+# - Wx      width                400x
+# - WxH     width x height       400x70         (height = 0 = ignore)
+# - WxH+x+y width x height +x +y 400x0+200+100
+#
+# If +x+y is not specified (or not allowed), the gmrun window is displayed centered
+#Geometry = 450x
 Geometry = 400x0+15+15
-
-## Place window centered by the size of screen
-#CenteredByWidth = 0
-#CenteredByHeight = 0
-## Place window on active monitor
-#UseActiveMonitor = 0
 
 # History size
 History = 10000
@@ -33,35 +29,50 @@ ShowDotFiles = 0
 # Timeout (in milliseconds) after which gmrun will simulate a TAB press
 # Set this to NULL if do not like this feature.
 TabTimeout = 0
+# Use libc's system(3) to run commands, this includes any shell command
+#   and special stuff that only a shell interpreter can understand
+# Set to 0 if you want a more conservative approach where the file to run
+#   is validated and errors running files are reported (without closing the gmrun window)
+SHELL_RUN = 1
+
+
+# use GLib XDG handling? (freedesktop specification)
+USE_GLIB_XDG = 0
+
+#=======================================================================
+# USE_GLIB_XDG = 0, you can specify URL and extension Handlers...
+#=======================================================================
+
 
 # URL handlers
 # If the entered text is "http://www.google.com" then:
 #   - %u gets replaced with the whole URL ("http://www.google.com")
-#   - %s gets replaced with "//www.google.com".  This is useful for URL-s
-#     like "man:printf" --> %s will get replaced with "printf"
-URL_http = firefox %u
-URL_https = firefox %u
+#   - %s gets replaced with "//www.google.com".
+#        useful for URL's like "man:printf" --> %s becomes printf
+URL_http = xdg-open %u
+URL_https = xdg-open %u
 URL_tor = firefox -no-remote -P Tor %s
+URL_file = thunar %s
+URL_d = firefox 'https://duckduckgo.com/?q=%s'
+URL_g = firefox 'https://encrypted.google.com/search?q=%s'
+URL_dic = firefox 'dic.daum.net/search.do?q=%s'
+URL_arch = firefox 'https://encrypted.google.com/search?q=%s site:wiki.archlinux.org'
+URL_vpn = firefox -no-remote -P vpn %s
 #URL_mailto = firefox mailto:%s
 URL_man = ${TermExec} man %s
 URL_info = ${TermExec} info %s
+URL_search = xdg-open 'http://www.google.com/search?q=%s'
 #URL_pd = ${TermExec} 'perldoc %s'
-URL_file = thunar %s
 #URL_readme = ${TermExec} 'less /usr/doc/%s/README'
 #URL_sh = sh -c '%s'
 #URL_paci = ${TermExec} 'pacman -S %s'
 #URL_pacs = ${TermExec} 'pacman -Ss %s'
-URL_d = firefox 'https://duckduckgo.com/?q=%s'
-URL_g = firefox 'https://encrypted.google.com/search?q=%s'
-URL_dic = firefox 'dic.daum.net/search.do?q=%s'
 #URL_arch = firefox 'https://duckduckgo.com/?q=%s site:wiki.archlinux.org'
-URL_arch = firefox 'https://encrypted.google.com/search?q=%s site:wiki.archlinux.org'
 #URL_tor = firefox -no-remote -P tor -private %s
 
 # extension handlers
-#EXT:doc,rtf = AbiWord %s
-#EXT:txt,cc,cpp,h,java,html,htm,epl,tex,latex,js,css,xml,xsl,am,php,css,js,py,rb = mousepad %s
-EXT:mpeg,mpg,avi,mkv,flv = mpv %s
-#EXT:mp3,ogg,m4a,wmv,wma = deadbeef %s
-#EXT:ps = gv %s
-EXT:pdf = firefox %s
+# Customize your own extension handler.
+#   syntax-> EXT:ext,etc = handler '%s'
+EXT:doc,rtf,txt,cc,cpp,h,java,html,htm,epl,tex,latex,js,css,xml,xsl,am,ps,pdf = xdg-open '%s'
+EXT:mkv,mp4,avi,asf,wmv = xdg-open '%s'
+EXT:mp3,flac,ogg,aac,wav = xdg-open '%s'
