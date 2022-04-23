@@ -277,11 +277,15 @@ for_window [workspace="game"] floating enable
 for_window [window_role="About"] floating enable
 for_window [title="About Mozilla Firefox"] floating enable
 for_window [instance="galculator"] floating enable
-for_window [class="Gmrun"] sticky enable
 for_window [instance="uim-pref-gtk"] floating enable
 for_window [instance="xpad"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [instance="feh"] floating enable
+for_window [class="knotes"] floating ENABLE
 
 # Set per-application border
 for_window [class="Gmrun"] border none
+
+# Showing a window on all workspaces
+for_window [instance="indicator-stickynotes"] sticky enable
+for_window [class="Gmrun"] sticky enable
