@@ -107,9 +107,9 @@ bindsym $mod+a focus parent
 
 set $workspace1 "main"
 set $workspace2 "studio"
-set $workspace3 "game"
-set $workspace4 "gimp"
-set $workspace5 "office"
+set $workspace3 "office"
+set $workspace4 "game"
+set $workspace5 "gimp"
 set $workspace6 "6"
 set $workspace7 "7"
 set $workspace8 "8"
@@ -243,27 +243,28 @@ exec --no-startup-id dex -ae i3
 
 # assign app to workspace
 #workspace1
-#assign [class="Firefox"] $workspace1
+#assign [class="Firefox"] main
 
 #workspace2
-assign [class="mpv"] $workspace2
-assign [instance="vlc"] $workspace2
-assign [instance="clementine"] $workspace2
-for_window [class="plexmediaplayer"] move to workspace $workspace2
+assign [class="mpv"] studio
+assign [instance="vlc"] studio
+assign [instance="clementine"] studio
+assign [instance="mcomix"] studio
+#for_window [class="plexmediaplayer"] move to workspace $workspace2
 
 #workspace3
-assign [class="Steam"] $workspace3
-assign [class="Wine"] $workspace3
-assign [instance="Diablo III.exe"] $workspace3
-assign [instance="Battle.net.exe"] $workspace3
-assign [instance="gomics"] $workspace3
-assign [instance="mcomix"] $workspace2
+assign [instance="libreoffice"] office
+assign [title="Deluge"] office
 
 #workspace4
-assign [class="Gimp"] $workspace4
+assign [class="Steam"] game
+assign [class="Wine"] game
+assign [instance="Diablo III.exe"] game
+assign [instance="Battle.net.exe"] game
+assign [instance="gomics"] game
 
 #workspace5
-assign [instance="libreoffice"] $workspace5
+assign [class="Gimp"] gimp
 
 # config window mode
 #for_window [class="^.*"] border pixel 0 #disable window titlebars and gaps between containers.
@@ -278,10 +279,10 @@ for_window [window_role="About"] floating enable
 for_window [title="About Mozilla Firefox"] floating enable
 for_window [instance="galculator"] floating enable
 for_window [instance="uim-pref-gtk"] floating enable
-for_window [instance="xpad"] floating enable
+#for_window [instance="xpad"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [instance="feh"] floating enable
-for_window [class="knotes"] floating ENABLE
+for_window [class="knotes"] floating enable
 
 # Set per-application border
 for_window [class="Gmrun"] border none
