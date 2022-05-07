@@ -36,6 +36,10 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id xterm -geometry 93x31+100+350 -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -s $USER"
 bindsym $mod+Control+Return exec --no-startup-id xterm -geometry 93x31+1000+350
 
+# show and close dunst history
+bindsym $mod+F2 exec --no-startup-id dunstctl history-pop
+bindsym $mod+F3 exec --no-startup-id dunstctl close-all
+
 # kill focused window
 bindsym $mod+c kill
 # Make the currently focused window a scratchpad
