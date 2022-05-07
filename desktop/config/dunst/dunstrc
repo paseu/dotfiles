@@ -441,3 +441,7 @@
     new_icon = transmission
  #   timeout = 2000
 
+[deluge-panel]
+    appname = Deluge
+    format = "%s\n%b"
+    new_icon = deluge
