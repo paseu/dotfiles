@@ -43,7 +43,7 @@ throttle.max_uploads.set = 20
 # of rTorrent using the same session directory. Perhaps using a
 # relative path?
 #
-session.path.set = ./session
+session.path.set = ~/.rtorrent.session
 
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
@@ -140,12 +140,12 @@ directory = /mnt/d_buffer/rtorrent_test/incomplete
 # 3) Upon trigger, attempt to load (and start) new *.torrent files found in /home/user/torrents/watch/
 # 4) set a variable named 'custom1' with the value "/home/user/torrents/complete"
 # NOTE: if you do not want it to automatically start the torrent, change 'load.start' to 'load.normal'
-schedule2 = watch_directory_1,10,10,"load.normal=/home/paseu/watch/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete"
+schedule2 = watch_directory_1,10,10,"load.normal=/home/paseu/.watch/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete"
 
-schedule2 = watch_directory_2,10,10,"load.normal=/home/paseu/watch/anime/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/anime"
-schedule2 = watch_directory_3,10,10,"load.normal=/home/paseu/watch/movie/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/movie"
-schedule2 = watch_directory_4,10,10,"load.normal=/home/paseu/watch/music/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/music"
-schedule2 = watch_directory_5,10,10,"load.normal=/home/paseu/watch/.porn/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/.porn"
+schedule2 = watch_directory_2,10,10,"load.normal=/home/paseu/.watch/anime/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/anime"
+schedule2 = watch_directory_3,10,10,"load.normal=/home/paseu/.watch/movie/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/movie"
+schedule2 = watch_directory_4,10,10,"load.normal=/home/paseu/.watch/music/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/music"
+schedule2 = watch_directory_5,10,10,"load.normal=/home/paseu/.watch/.porn/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/.porn"
 
 # upon completion, move content to path specified above via custom1
 method.insert = d.data_path, simple, "if=(d.is_multi_file), (cat,(d.directory),/), (cat,(d.directory),/,(d.name))"
