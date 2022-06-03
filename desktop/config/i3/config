@@ -259,6 +259,7 @@ assign [instance="mcomix"] studio
 #workspace3
 assign [instance="libreoffice"] office
 assign [title="Deluge"] office
+assign [title="qBittorrent"] office
 
 #workspace4
 assign [class="Steam"] game

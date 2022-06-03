@@ -1,2 +1,2 @@
 #!/bin/bash
-find /mnt/{DumP,dAta} -type f -iname "*$1*$2*"|sort -r
+find /mnt/{DumP,dAta,d_buffer} -type f -iname "*$1*$2*"|sort -r
