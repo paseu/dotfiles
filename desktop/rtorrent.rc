@@ -16,24 +16,105 @@
 
 # Maximum and minimum number of peers to connect to per torrent.
 #
-#throttle.min_peers.normal.set = 40
-throttle.max_peers.normal.set = 100
+#throttle.min_peers.normal.set = 99
+#throttle.max_peers.normal.set = 100
+
+# Maximum number of simultaneous downloads and uploads slots (global slots!) (`max_downloads_global`, `max_uploads_global`)
+#throttle.max_downloads.global.set = 500
+#throttle.max_uploads.global.set   = 100
 
 # Same as above but for seeding completed torrents.
 # "-1" = same as downloading.
 #
-#throttle.min_peers.seed.set = 10
-#throttle.max_peers.seed.set = 20
+#throttle.min_peers.seed.set = -1
+#throttle.max_peers.seed.set = -1
 
 # Maximum number of simultaneous uploads per torrent.
 #
-throttle.max_uploads.set = 20
+#throttle.max_uploads.set = 20
 
 # Global upload and download rate in KiB.
 # "0" for unlimited.
 #
 #throttle.global_down.max_rate.set_kb = 0
 #throttle.global_up.max_rate.set_kb = 0
+
+############################################################################################
+# Performance Tuning
+# Global upload and download rate in KiB, `0` for unlimited (`download_rate`, `upload_rate`)
+throttle.global_down.max_rate.set_kb = 0
+throttle.global_up.max_rate.set_kb   = 0
+
+# Maximum number of simultaneous downloads and uploads slots (global slots!) (`max_downloads_global`, `max_uploads_global`)
+throttle.max_downloads.global.set = 500
+throttle.max_uploads.global.set   = 20
+
+# Maximum and minimum number of peers to connect to per torrent while downloading (`min_peers`, `max_peers`) Default: `100` and `200` respectively
+throttle.min_peers.normal.set = 99
+throttle.max_peers.normal.set = 100
+
+# Same as above but for seeding completed torrents (seeds per torrent), `-1` for same as downloading (`min_peers_seed`, `max_peers_seed`) Default: `-1` for both
+throttle.min_peers.seed.set = -1
+throttle.max_peers.seed.set = -1
+
+# Maximum number of simultaneous downloads and uploads slots per torrent (`max_uploads`) Default: `50` for both
+throttle.max_downloads.set = 100
+throttle.max_uploads.set = 4
+
+# Set the numwant field sent to the tracker, which indicates how many peers we want. 
+#  A negative value disables this feature. Default: `-1` (`tracker_numwant`)
+trackers.numwant.set = 100
+
+# Set the max amount of memory address space used to mapping file chunks. This refers to memory mapping, not
+#  physical memory allocation. Default: `1GB` (`max_memory_usage`) 
+# This may also be set using ulimit -m where 3/4 will be allocated to file chunks.
+pieces.memory.max.set = 2048M
+
+# Maximum number of connections rtorrent can accept/make (`sockets`)
+network.max_open_sockets.set = 999
+
+# Maximum number of open files rtorrent can keep open (you have to modify the system wide settings with ulimit!) (`set_max_open_files`)
+network.max_open_files.set = 600
+
+# Maximum number of simultaneous HTTP request (used by announce or scrape requests) Default: `32` (`set_max_open_http`)
+network.http.max_open.set = 99
+
+# Send and receive buffer size for socket. Disabled by default (`0`), this means the default is used by OS 
+#  (you have to modify the system wide settings!) (`send_buffer_size`, `receive_buffer_size`)
+# Increasing buffer sizes may help reduce disk seeking, connection polling as more data is buffered each time
+#  the socket is written to. It will result higher memory usage (not visible in rtorrent process!).
+network.receive_buffer.size.set =  4M
+network.send_buffer.size.set    = 12M
+
+# Preloading a piece of a file. Default: `0` Possible values: `0` (Off) , `1` (Madvise) , `2` (Direct paging).
+pieces.preload.type.set = 2
+#pieces.preload.min_size.set = 262144
+#pieces.preload.min_rate.set = 5120
+
+# TOS of peer connections. Default: `throughput`. If the option is set to `default` then the system default TOS
+#  is used. A hex value may be used for non-standard settings.  (`tos`)
+# Possible values: `[default|lowdelay|throughput|reliability|mincost]` or a hex value.
+#network.tos.set = throughput
+
+# CURL options to add support for nonofficial SSL trackers and peers
+network.http.ssl_verify_host.set = 0
+network.http.ssl_verify_peer.set = 0
+
+# CURL option to lower DNS timeout. Default: `60`.
+network.http.dns_cache_timeout.set = 25
+
+# Max packet size using xmlrpc. Default: `524288` (xmlrpc_size_limit)
+network.xmlrpc.size_limit.set = 2M
+
+# Save all the sessions in every 12 hours instead of the default 20 minutes.
+schedule2 = session_save, 1200, 43200, ((session.save))
+
+# Prune file status in every 24 hours, this is the default setting.
+#schedule2 = prune_file_status, 3600, 86400, ((system.file_status_cache.prune))
+
+# Whether to allocate disk space for a new torrent. Default: `0`
+#system.file.allocate.set = 0
+############################################################################################
 
 # Default directory to save the downloaded torrents.
 #
@@ -101,7 +182,7 @@ protocol.encryption.set = allow_incoming,try_outgoing,enable_retry
 # "auto" (start and stop DHT as needed), or "on" (start DHT immediately).
 # The default is "off". For DHT to work, a session directory must be defined.
 #
-dht.mode.set = on
+dht.mode.set = auto
 
 # UDP port to use for DHT.
 #
@@ -132,7 +213,7 @@ network.scgi.open_local = /home/paseu/rpc.socket
 execute.nothrow = chmod,770,/home/paseu/rpc.socket
 
 # default path for in progress downloads
-directory = /mnt/d_buffer/rtorrent_test/incomplete
+directory = /mnt/d_buffer/.tmp
 
 # schedule a timer event named 'watch_directory_1':
 # 1) triggers 10 seconds after rtorrent starts
@@ -140,12 +221,15 @@ directory = /mnt/d_buffer/rtorrent_test/incomplete
 # 3) Upon trigger, attempt to load (and start) new *.torrent files found in /home/user/torrents/watch/
 # 4) set a variable named 'custom1' with the value "/home/user/torrents/complete"
 # NOTE: if you do not want it to automatically start the torrent, change 'load.start' to 'load.normal'
-schedule2 = watch_directory_1,10,10,"load.normal=/home/paseu/.watch/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete"
+schedule2 = watch_directory_1,10,10,"load.normal=/home/paseu/.watch/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete"
 
-schedule2 = watch_directory_2,10,10,"load.normal=/home/paseu/.watch/anime/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/anime"
-schedule2 = watch_directory_3,10,10,"load.normal=/home/paseu/.watch/movie/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/movie"
-schedule2 = watch_directory_4,10,10,"load.normal=/home/paseu/.watch/music/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/music"
-schedule2 = watch_directory_5,10,10,"load.normal=/home/paseu/.watch/.porn/*.torrent,d.custom1.set=/mnt/d_buffer/rtorrent_test/complete/.porn"
+schedule2 = watch_directory_2,10,10,"load.normal=/home/paseu/.watch/anime/*.torrent,d.custom1.set=/mnt/dAta/multimedia/anime"
+schedule2 = watch_directory_3,10,10,"load.normal=/home/paseu/.watch/movie/*.torrent,d.custom1.set=/mnt/dAta/multimedia/movie"
+schedule2 = watch_directory_4,10,10,"load.normal=/home/paseu/.watch/music/*.torrent,d.custom1.set=/mnt/dAta/multimedia/music"
+schedule2 = watch_directory_5,10,10,"load.normal=/home/paseu/.watch/.porn/hanime/2D/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/hanime/2D"
+schedule2 = watch_directory_6,10,10,"load.normal=/home/paseu/.watch/.porn/hanime/3D/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/hanime/3D"
+schedule2 = watch_directory_7,10,10,"load.normal=/home/paseu/.watch/.porn/hmanga/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/hmanga"
+schedule2 = watch_directory_8,10,10,"load.normal=/home/paseu/.watch/.porn/real/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/real"
 
 # upon completion, move content to path specified above via custom1
 method.insert = d.data_path, simple, "if=(d.is_multi_file), (cat,(d.directory),/), (cat,(d.directory),/,(d.name))"
