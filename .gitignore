@@ -30,9 +30,9 @@
 **/config/pavucontrol.ini
 **/config/psd/
 **/config/pulse/
-**/config/qBittorrent/qBittorrent-data.conf
-**/config/qBittorrent/qBittorrent.conf
-**/config/qBittorrent/watched_folders.json
+!**/config/qBittorrent
+**/config/qBittorrent/*
+!**/config/qBittorrent/qBittorrent.conf
 **/config/skypeforlinux/
 **/config/systemd/user/default.target.wants/
 **/config/tint2/
