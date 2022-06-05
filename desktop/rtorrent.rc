@@ -226,7 +226,7 @@ schedule2 = watch_directory_1,10,10,"load.normal=/home/paseu/.watch/*.torrent,d.
 schedule2 = watch_directory_2,10,10,"load.normal=/home/paseu/.watch/anime/*.torrent,d.custom1.set=/mnt/dAta/multimedia/anime"
 schedule2 = watch_directory_3,10,10,"load.normal=/home/paseu/.watch/movie/*.torrent,d.custom1.set=/mnt/dAta/multimedia/movie"
 schedule2 = watch_directory_4,10,10,"load.normal=/home/paseu/.watch/music/*.torrent,d.custom1.set=/mnt/dAta/multimedia/music"
-schedule2 = watch_directory_5,10,10,"load.normal=/home/paseu/.watch/.porn/hanime/2D/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/hanime/2D"
+schedule2 = watch_directory_5,10,10,"load.start=/home/paseu/.watch/.porn/hanime/2D/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/hanime/2D"
 schedule2 = watch_directory_6,10,10,"load.normal=/home/paseu/.watch/.porn/hanime/3D/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/hanime/3D"
 schedule2 = watch_directory_7,10,10,"load.normal=/home/paseu/.watch/.porn/hmanga/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/hmanga"
 schedule2 = watch_directory_8,10,10,"load.normal=/home/paseu/.watch/.porn/real/*.torrent,d.custom1.set=/mnt/d_buffer/.temp/complete/real"
@@ -235,3 +235,8 @@ schedule2 = watch_directory_8,10,10,"load.normal=/home/paseu/.watch/.porn/real/*
 method.insert = d.data_path, simple, "if=(d.is_multi_file), (cat,(d.directory),/), (cat,(d.directory),/,(d.name))"
 method.insert = d.move_to_complete, simple, "d.directory.set=$argument.1=; execute=mkdir,-p,$argument.1=; execute=mv,-u,$argument.0=,$argument.1=; d.save_full_session="
 method.set_key = event.download.finished,move_complete,"d.move_to_complete=$d.data_path=,$d.custom1="
+
+# send notification when a download finished
+#method.set_key = event.download.finished,notify_me,"execute=notify-send,$d.get_name="
+#method.set_key = event.download.finished,notify_me,"execute=/home/paseu/dotfiles/desktop/scripts/rtorrent_notify.sh,$d.get_name="
+method.set_key = event.download.finished,notify_me,"execute=~/dotfiles/desktop/scripts/rtorrent_notify.sh,$d.name="
