@@ -294,14 +294,14 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#222222"
     foreground = "#888888"
-    timeout = 10
+    timeout = 2000
     # Icon for notifications with low urgency, uncomment to enable
     #new_icon = /home/paseu/.config/dunst/normal.png
 
 [urgency_normal]
     background = "#285577"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 2000
     # Icon for notifications with normal urgency, uncomment to enable
     #new_icon = /home/paseu/.config/dunst/normal.png
 
@@ -445,3 +445,4 @@
     appname = Deluge
     format = "%s\n%b"
     new_icon = deluge
+
