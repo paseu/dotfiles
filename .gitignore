@@ -15,6 +15,7 @@
 **/config/configstore/
 **/config/dconf/
 **/config/deluge/
+**/config/easytag/
 **/config/galculator
 **/config/gomics/
 **/config/google-chrome*
