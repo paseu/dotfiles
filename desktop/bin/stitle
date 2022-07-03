@@ -1,2 +1,3 @@
 #!/bin/bash
-find /mnt/{DumP,dAta,d_buffer} -type f -iname "*$1*$2*"|sort -r
+find /mnt/{DumP,d_buffer} -type f -iname "*$1*$2*"|sort -r
+find /home/paseu/.watch -type f -iname "*$1*$2*"|sort -r
