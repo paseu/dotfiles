@@ -250,11 +250,11 @@ exec --no-startup-id dex -ae i3
 #assign [class="Firefox"] main
 
 #workspace2
-assign [class="mpv"] studio
+#assign [class="mpv"] studio
+for_window [class="mpv"] move container to workspace studio
 assign [instance="vlc"] studio
 assign [instance="clementine"] studio
 assign [instance="mcomix"] studio
-#for_window [class="plexmediaplayer"] move to workspace $workspace2
 
 #workspace3
 assign [instance="libreoffice"] office
@@ -262,7 +262,7 @@ assign [title="Deluge"] office
 assign [title="qBittorrent"] office
 
 #workspace4
-assign [class="Steam"] game
+assign [class="Steam"] studio
 assign [class="Wine"] game
 assign [instance="Diablo III.exe"] game
 assign [instance="Battle.net.exe"] game
