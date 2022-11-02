@@ -249,8 +249,9 @@ exec --no-startup-id dex -ae i3
 #workspace1
 #assign [class="Firefox"] main
 
-#workspace2
+#workspace2 
 #assign [class="mpv"] studio
+## mpv, firefox can't be assigned to workspaces by 'assign' so change method (like below)
 for_window [class="mpv"] move container to workspace studio
 assign [instance="vlc"] studio
 assign [instance="clementine"] studio
