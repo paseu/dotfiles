@@ -263,7 +263,7 @@ assign [title="Deluge"] office
 assign [title="qBittorrent"] office
 
 #workspace4
-assign [class="Steam"] studio
+assign [class="Steam"] game
 assign [class="Wine"] game
 assign [instance="Diablo III.exe"] game
 assign [instance="Battle.net.exe"] game
