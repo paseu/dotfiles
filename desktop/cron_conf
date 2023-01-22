@@ -1,0 +1,3 @@
+# mm  hh DD MM W cmd
+   0 */2  *  * * find /tmp/mpv_thumbs_cache -amin +120 -exec rm -r '{}' +
+   5 */2  *  * * find /tmp/mpv_thumbs_cache/ -empty -type d -delete
