@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=conky -c /home/paseu/Downloads/Gotham_desktop --daemonize --pause=1 
+StartupNotify=false
+Terminal=false
