@@ -225,7 +225,6 @@ bar {
           }
 	status_command i3status -c /home/paseu/.config/i3status/config
        tray_output DP-0
-
 # comment out below for hide taskbar
        mode        hide
 }
@@ -239,7 +238,7 @@ bar {
 bindsym $mod+shift+x exec i3lock --color "$base01"
 
 # autostart
-exec --no-startup-id conky -c /home/paseu/dotfiles/desktop/conky/Gotham_desktop -d -p=5
+#exec --no-startup-id conky -c /home/paseu/Downloads/Gotham_desktop -p=5 -d
 # xdg autostart
 exec --no-startup-id dex -ae i3
 # wallpaper
@@ -252,8 +251,9 @@ exec --no-startup-id dex -ae i3
 #workspace2 
 #assign [class="mpv"] studio
 ## mpv, firefox can't be assigned to workspaces by 'assign' so change method (like below)
-for_window [class="mpv"] move container to workspace studio
+#for_window [class="mpv"] move container to workspace studio
 #assign [instance="mpv"] studio
+assign [class="mpv"] studio
 assign [instance="vlc"] studio
 assign [instance="clementine"] studio
 assign [instance="mcomix"] studio

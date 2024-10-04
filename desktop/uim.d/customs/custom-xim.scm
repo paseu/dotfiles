@@ -1,2 +1,6 @@
 (define uim-xim-use-xft-font? #f)
 (define uim-xim-xft-font-name "Sans")
+(define uim-xim-fontset-ja "-sony-fixed-medium-r-normal--16-*-*-*-c-80-iso8859-1,-jis-fixed-medium-r-normal--16-*-75-75-c-160-jisx0208.1983-0,-sony-fixed-medium-r-normal--16-*-*-*-c-80-jisx0201.1976-0")
+(define uim-xim-fontset-ko "-sony-fixed-medium-r-normal--16-*-*-*-c-80-iso8859-1,-daewoo-gothic-medium-r-normal--16-120-100-100-c-160-ksc5601.1987-0")
+(define uim-xim-fontset-zh-cn "-sony-fixed-medium-r-normal--16-*-*-*-c-80-iso8859-1,-isas-fangsong ti-medium-r-normal--16-160-72-72-c-160-gb2312.1980-0")
+(define uim-xim-fontset-zh-tw "-sony-fixed-medium-r-normal--16-*-*-*-c-80-iso8859-1,-taipei-fixed-medium-r-normal--16-150-75-75-c-160-big5-0")

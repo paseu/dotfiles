@@ -80,7 +80,8 @@ else:
 
     opts = (os.getenv("MPV") or "mpv").split()
     opts.extend(["--no-terminal", "--force-window", "--load-unsafe-playlists",
-                 "--no-osc", "--load-scripts=yes", "--input-ipc-server=" + SOCK,
+                 "--load-scripts=yes", "--profile=h264",
+                 "--input-ipc-server=" + SOCK,
                  "--"])
     opts.extend(files)
 

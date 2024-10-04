@@ -1,4 +1,5 @@
 #!/bin/bash
 sleep 1s
-find /mnt/d_buffer/complete/.porn/{real,tmp.archive} -type f ! -name \*.mp4 ! -name \*.avi ! -name \*.webm ! -name \*.wmv ! -name \*.mkv ! -name \*.ass ! -name \*.smi ! -name \*.zip -exec rm {} \;
+#find /mnt/d_buffer/complete/.porn/{real,tmp.archive} -type f ! -name \*.mp4 ! -name \*.avi ! -name \*.mov ! -name \*.webm ! -name \*.wmv ! -name \*.mkv ! -name \*.ass ! -name \*.smi ! -name \*.zip -exec rm {} \;
+find /mnt/d_buffer/complete/.porn/{real,tmp.archive} -type f ! -name \*.mp4 ! -name \*.avi ! -name \*.mov ! -name \*.webm ! -name \*.wmv ! -name \*.mkv ! -name \*.ass ! -name \*.smi -exec rm {} \;
 exit

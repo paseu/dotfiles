@@ -6,8 +6,9 @@ uim-xim &!
 export XMODIFIERS='@im=uim'
 
 # wallpaper
-feh --bg-scale /home/paseu/Pictures/.wallpaper/365528.jpg
+#feh --bg-scale /home/paseu/Pictures/.wallpaper/365528.jpg
+#sleep 0 && feh --bg-center /home/paseu/Pictures/.wallpaper/365528.jpg &
+#conky -c /home/paseu/dotfiles/desktop/conky/Gotham_desktop -d
 
 # run rtorrent as daemon
 #rtorrent -o system.daemon.set=true &
-

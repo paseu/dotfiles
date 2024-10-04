@@ -1,2 +1,7 @@
 --mark-watched
 --cookies-from-browser firefox:/home/paseu/.mozilla/firefox/184sl6uk.default-1540853031782
+#--cookies-from-browser chrome
+--format="bestvideo[height<=?1080]+bestaudio/best"
+#--format-sort vcodec:h264
+#--http-chunk-size 100M
+#--buffer-size 32K
