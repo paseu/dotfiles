@@ -1,6 +1,7 @@
 # mpv config
 player=mpv
-player-args=--no-resume-playback --load-scripts=no --sub-auto=exact --no-input-default-bindings --no-config --cache=yes --demuxer-max-bytes=123400KiB --demuxer-readahead-secs=20
+#player-args=--no-resume-playback --load-scripts=no --sub-auto=exact --no-input-default-bindings --no-config --cache=yes --demuxer-max-bytes=123400KiB --demuxer-readahead-secs=20
+player-args=--no-resume-playback --sub-auto=exact --no-input-default-bindings --no-config --cache=yes --demuxer-max-bytes=123400KiB --demuxer-readahead-secs=20
 
 # let player decide when to exit
 player-no-close

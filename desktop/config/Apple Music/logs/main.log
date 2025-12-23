@@ -1,0 +1,19 @@
+[2025-03-30 01:33:05.528] [info]  Welcome to Apple Music Desktop!
+[2025-03-30 01:33:05.532] [info]  WidevineCDM component ready.
+[2025-03-30 01:33:05.533] [info]  App Version: 2.1.2
+[2025-03-30 01:33:05.534] [info]  Electron Version: 28.2.4
+[2025-03-30 01:33:05.534] [info]  Chromium Version: 120.0.6099.291
+[2025-03-30 01:33:05.534] [info]  NodeJS Version: 18.18.2
+[2025-03-30 01:33:05.535] [info]  V8 Version: 12.0.267.19-electron.0
+[2025-03-30 01:33:05.535] [info]  User Data Dir: /home/paseu/.config/Apple Music
+[2025-03-30 01:33:05.580] [info]  Initialized Configuration
+[2025-03-30 01:33:05.583] [info]  Loading mainURL: https://music.apple.com/
+[2025-03-30 01:33:07.272] [info]  [ electron:preload ] IPC Listeners Created
+[2025-03-30 01:33:19.679] [info]  [ electron:preload ] IPC Listeners Created
+[2025-03-30 01:35:47.707] [info]  Saved windowDetails.
+[2025-03-30 01:35:47.708] [info]  Media was playing
+[2025-03-30 01:35:47.710] [info]  mainWindow.close()
+[2025-03-30 01:35:52.020] [info]  Saved windowDetails.
+[2025-03-30 01:35:52.021] [info]  Media was playing
+[2025-03-30 01:35:52.023] [info]  mainWindow.close()
+[2025-03-30 01:35:52.044] [warn]  Apple Music is quitting now
