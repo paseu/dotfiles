@@ -92,6 +92,15 @@ source $ZSH/oh-my-zsh.sh
 
 
 ## user define
+# function
+#rtorrent + ulimit 
+rt() {
+    # 현재 쉘 세션의 파일 열기 제한을 4096으로 상향
+    ulimit -n 4096
+    # rtorrent 실행
+    command rtorrent "$@"
+}
+
 # aliases
 #alias pacclean="paccache -ruk0 && paccache -rk1 && sudo pacman -Sc && pacman -Qdt"
 alias pacclean="paccache -ruk0 && paccache -rk1 && pacman -Qdt"
