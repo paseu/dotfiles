@@ -16,8 +16,8 @@
 
 # Maximum and minimum number of peers to connect to per torrent.
 #
-#throttle.min_peers.normal.set = 40
-#throttle.max_peers.normal.set = 100
+throttle.min_peers.normal.set = 40
+throttle.max_peers.normal.set = 100
 
 # Same as above but for seeding completed torrents.
 # "-1" = same as downloading.
@@ -27,13 +27,13 @@
 
 # Maximum number of simultaneous uploads per torrent.
 #
-#throttle.max_uploads.set = 15
+throttle.max_uploads.set = 15
 
 # Global upload and download rate in KiB.
 # "0" for unlimited.
 #
-#throttle.global_down.max_rate.set_kb = 0
-#throttle.global_up.max_rate.set_kb = 0
+throttle.global_down.max_rate.set_kb = 0
+throttle.global_up.max_rate.set_kb = 0
 
 # Default directory to save the downloaded torrents.
 #
@@ -87,6 +87,7 @@ schedule2 = watch_directory_8,10,10,"load.normal=/home/paseu/.watch/.porn/real/*
 # fixed that causes lack of disk-space not to be properly reported.
 #
 pieces.hash.on_completion.set = no
+check_hash = no
 
 # Set whether the client should try to connect to UDP trackers.
 #
@@ -148,9 +149,10 @@ method.insert=d.down.sequential,value|const,0
 method.insert=d.down.sequential.set,value|const,0
 network.xmlrpc.size_limit.set = 4M
 # limit open files
-network.max_open_files.set = 1024
+network.max_open_files.set = 2048
 # limit open sockets 
 network.max_open_sockets.set = 1024
+network.http.max_open.set = 99
 
 #AI recommend
 # limit memory use
@@ -161,6 +163,8 @@ system.file.allocate.set = 1
 #Controls the DNS cache expiry (in seconds) for HTTP requests. The default is 60 seconds.
 #Set to zero to completely disable caching, or set to -1 to make the cached entries remain forever.
 #network.http.dns_cache_timeout.set = 3600
+network.http.dns_cache_timeout.set = 0
+
 #pieces.preload.type.set = 0
 ## 로그 파일 생성
 #log.open_file = "rtorrent_log", "/tmp/rtorrent.log"
