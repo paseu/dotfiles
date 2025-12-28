@@ -5,6 +5,7 @@
 # Set terminal
 Terminal = xterm
 TermExec = ${Terminal} -e
+AlwaysShowConsole = 0
 AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man
 # Set window geometry
 # - Wx      width                400x
@@ -28,7 +29,8 @@ ShowDotFiles = 0
 
 # Timeout (in milliseconds) after which gmrun will simulate a TAB press
 # Set this to NULL if do not like this feature.
-TabTimeout = 0
+#TabTimeout = 0
+TabTimeout = NULL
 # Use libc's system(3) to run commands, this includes any shell command
 #   and special stuff that only a shell interpreter can understand
 # Set to 0 if you want a more conservative approach where the file to run

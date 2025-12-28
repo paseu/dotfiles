@@ -1,0 +1,62 @@
+conky.config = {
+    -- -- 창 설정 (Window Settings) -- --
+    own_window = false,
+    own_window_type = 'desktop',
+    own_window_class = 'Conky',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 0,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_colour = '#000000',
+
+    -- -- 폰트 및 렌더링 (Font & Rendering) -- --
+    use_xft = true,
+    font = '123:size=8',
+    xftalpha = 0.1,
+    double_buffer = true,
+    override_utf8_locale = true,
+    uppercase = false,
+
+    -- -- 색상 및 레이아웃 (Color & Layout) -- --
+    default_color = 'white',
+    alignment = 'top_left',
+    gap_x = 200,
+    gap_y = 20,
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = false,
+
+    -- -- 시스템 성능 (Performance) -- --
+    update_interval = 1.0,
+    total_run_times = 0,
+    no_buffers = true,
+    cpu_avg_samples = 2,
+    net_avg_samples = 1,
+    use_spacer = 'none',
+};
+
+conky.text = [[
+# -- 시간 및 날짜 표시 --
+${voffset 10}${color EAEAEA}${font GE Inspira:pixelsize=120}${time %H:%M}${font}\
+${voffset -84}${offset 10}${color FFA300}${font GE Inspira:pixelsize=42}${time %d} \
+${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time %B} ${time %Y}${font}\
+${voffset 24}${font GE Inspira:pixelsize=58}${offset -120}${time %A}${font}
+
+# -- 저장소 상태 (D-Buffer, dAta) --
+${voffset -12}${offset 12}${font Ubuntu:pixelsize=10}\
+${color FFA300}Buffer ${offset 7}${color EAEAEA}${fs_free /mnt/d_buffer} / ${fs_size /mnt/d_buffer}${offset 20}\
+${color FFA300}dAta ${offset 7}${color EAEAEA}${fs_free /mnt/dAta} / ${fs_size /mnt/dAta}${offset 20}\
+${color FFA300}completed${offset 7}${color EAEAEA}${execi 10 python3 /home/paseu/dotfiles/desktop/scripts/rt_count.py}
+
+# -- 저장소(DumP), 패키지 업데이트, 이메일 및 장치 배터리 --
+${voffset -17}${offset 12}${font Ubuntu:pixelsize=10}\
+${color FFA300}DumP ${offset 10}${color EAEAEA}${fs_free /mnt/DumP} / ${fs_size /mnt/DumP}${offset 20}\
+${color FFA300}PKGs ${offset 7}${color EAEAEA}${execpi 1800 checkupdates | wc -l}${offset 20}\
+${color FFA300}AUR ${offset 7}${color EAEAEA}${execpi 1800 pacman -Qm | aur vercmp | wc -l}${offset 45}\
+${color FFA300}EMAIL${offset 7}${color EAEAEA}${execpi 300 python ~/dotfiles/desktop/scripts/gmail.py}${offset 40}\
+${color FFA300}HHKB${color EAEAEA}${offset 7}${exec upower -d | awk '/HHKB/' RS="\n\n" ORS="\n\n" | grep percentage | cut -c26-29}${offset 10}\
+${color FFA300}DS${offset 7}${color EAEAEA}${exec upower -d | awk '/48:18:8d:ec:d3:0d/' RS="\n\n" ORS="\n\n" | grep 'percentage' | cut -c26-33} \
+${exec upower -d | awk '/48:18:8d:ec:d3:0d/' RS="\n\n" ORS="\n\n" | grep 'state' | cut -c26-38}
+]];
+

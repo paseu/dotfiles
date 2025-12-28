@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=conky
-Exec=conky -c /home/paseu/Downloads/Gotham_desktop --daemonize --pause=1 
+Exec=conky -c /home/paseu/dotfiles/desktop/conky/conky_new --daemonize
 StartupNotify=false
 Terminal=false

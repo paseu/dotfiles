@@ -65,8 +65,8 @@ xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wh
 xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 
-## wallpaper
-sleep 1 && feh --bg-center /home/paseu/Pictures/.wallpaper/365528.jpg &
+### wallpaper
+#sleep 1 && feh --bg-center /home/paseu/Pictures/.wallpaper/365528.jpg &
 ## start de/wm
 exec i3
 
