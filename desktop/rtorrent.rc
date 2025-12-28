@@ -23,7 +23,7 @@ throttle.max_peers.normal.set = 100
 # "-1" = same as downloading.
 #
 #throttle.min_peers.seed.set = 10
-#throttle.max_peers.seed.set = 50
+throttle.max_peers.seed.set = -1
 
 # Maximum number of simultaneous uploads per torrent.
 #
@@ -151,7 +151,7 @@ network.xmlrpc.size_limit.set = 4M
 # limit open files
 network.max_open_files.set = 2048
 # limit open sockets 
-network.max_open_sockets.set = 1024
+network.max_open_sockets.set = 500
 network.http.max_open.set = 99
 
 #AI recommend
