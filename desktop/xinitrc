@@ -59,11 +59,11 @@ fi
 [ -f /etc/xprofile ] && source /etc/xprofile
 [ -f ~/.xprofile ] && source ~/.xprofile
 
-# config thinkpad kbd(ultranav) middle-button scolling
-xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation" 1
-xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Button" 2
-xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Timeout" 200
-xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
+## config thinkpad kbd(ultranav) middle-button scolling
+#xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation" 1
+#xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Button" 2
+#xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Timeout" 200
+#xinput set-prop "Lenovo ThinkPad Compact USB Keyboard with TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 
 ### wallpaper
 #sleep 1 && feh --bg-center /home/paseu/Pictures/.wallpaper/365528.jpg &
