@@ -102,8 +102,7 @@ rt() {
 }
 
 # aliases
-#alias pacclean="paccache -ruk0 && paccache -rk1 && sudo pacman -Sc && pacman -Qdt"
-alias pacclean="paccache -ruk0 && paccache -rk1 && pacman -Qdt"
+alias pacclean="paccache -ruk0 && paccache -rk2 && pacman -Qdt"
 alias sproc="ps -aux|grep -v "grep"|grep -i --color"
 alias paccheck="checkupdates; pacman -Qm | aur vercmp"
 alias pacupdate="sudo pacman -Syu"

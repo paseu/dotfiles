@@ -151,28 +151,34 @@ network.xmlrpc.size_limit.set = 4M
 # limit open files
 network.max_open_files.set = 2048
 # limit open sockets 
-network.max_open_sockets.set = 500
-network.http.max_open.set = 99
+# 너무 오랫동안 응답 없는 피어를 정리하기 위해 세션과 소켓을 최적화
+network.max_open_sockets.set = 1024
+network.http.max_open.set = 100
 
 #AI recommend
-# limit memory use
+# limit memory use for buffer
 pieces.memory.max.set = 2048M
+network.send_buffer.size.set = 16M
+network.receive_buffer.size.set = 4M
+#port fixed
+network.port_range.set = 49164-49164
+network.port_random.set = no
 
 #Disk I/O optimization
 system.file.allocate.set = 1
 #Controls the DNS cache expiry (in seconds) for HTTP requests. The default is 60 seconds.
 #Set to zero to completely disable caching, or set to -1 to make the cached entries remain forever.
-#network.http.dns_cache_timeout.set = 3600
-network.http.dns_cache_timeout.set = 0
+network.http.dns_cache_timeout.set = 300
+pieces.preload.min_rate.set = 100M
+pieces.preload.type.set = 1
 
-#pieces.preload.type.set = 0
-## 로그 파일 생성
-#log.open_file = "rtorrent_log", "/tmp/rtorrent.log"
-#
-## 범주를 특정하지 않고 기본 수준의 모든 로그 기록
-#log.add_output = "info", "rtorrent_log"
-#log.add_output = "debug", "rtorrent_log"
-#log.add_output = "error", "rtorrent_log"
+# 로그 파일 생성
+log.open_file = "rtorrent_log", "/tmp/rtorrent.log"
+
+# 범주를 특정하지 않고 기본 수준의 모든 로그 기록
+log.add_output = "info", "rtorrent_log"
+log.add_output = "debug", "rtorrent_log"
+log.add_output = "error", "rtorrent_log"
 
 # schedule a timer event named 'watch_directory_1':
 # 1) triggers 10 seconds after rtorrent starts

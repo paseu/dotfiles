@@ -342,9 +342,9 @@
     background = "#222222"
     foreground = "#888888"
     timeout = 5
-    override_dbus_timeout = true
+    #override_dbus_timeout = true
     ignore_dbusclose = true
-    override_dbus_timeout = 5
+    #override_dbus_timeout = 5
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
