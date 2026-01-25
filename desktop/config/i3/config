@@ -42,6 +42,7 @@ bindsym $mod+Control+Return exec --no-startup-id xterm -geometry 93x31+1000+350
 
 ## show and close wired history
 bindsym $mod+F2 exec --no-startup-id wired --show 1
+bindsym $mod+F3 exec --no-startup-id wired --drop all
 
 # kill focused window
 bindsym $mod+c kill
