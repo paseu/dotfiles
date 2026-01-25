@@ -36,9 +36,12 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id xterm -geometry 93x31+100+350 -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session -s $USER"
 bindsym $mod+Control+Return exec --no-startup-id xterm -geometry 93x31+1000+350
 
-# show and close dunst history
-bindsym $mod+F2 exec --no-startup-id dunstctl history-pop
-bindsym $mod+F3 exec --no-startup-id dunstctl close-all
+## show and close dunst history
+#bindsym $mod+F2 exec --no-startup-id dunstctl history-pop
+#bindsym $mod+F3 exec --no-startup-id dunstctl close-all
+
+## show and close wired history
+bindsym $mod+F2 exec --no-startup-id wired --show 1
 
 # kill focused window
 bindsym $mod+c kill
@@ -307,3 +310,9 @@ exec_always --no-startup-id feh --bg-scale /home/paseu/Pictures/.wallpaper/36552
 exec --no-startup-id "bash -c 'gmrun & sleep 0.5 && pkill gmrun'"
 # power manager daemon
 exec --no-startup-id xfce4-power-manager
+## dunst
+#exec --no-startup-id dunst &
+# xfce4-notifyd
+#exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
+# wired
+exec_always --no-startup-id killall -q wired; wired

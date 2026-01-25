@@ -1,5 +1,4 @@
 # See dunst(5) for all configuration options
-
 [global]
     ### Display ###
 
@@ -283,7 +282,7 @@
     # Useful to enforce the timeout set by dunst configuration. Without this
     # parameter, an application may close the notification sent before the
     # user defined timeout.
-    ignore_dbusclose = false
+    ignore_dbusclose = true
 
     ### Wayland ###
     # These settings are Wayland-specific. They have no effect when using X11
@@ -342,9 +341,6 @@
     background = "#222222"
     foreground = "#888888"
     timeout = 5
-    #override_dbus_timeout = true
-    ignore_dbusclose = true
-    #override_dbus_timeout = 5
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
@@ -360,10 +356,19 @@
 [urgency_normal]
     background = "#285577"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 5
     override_pause_level = 30
     # Icon for notifications with normal urgency
     default_icon = dialog-information
+
+[firefox-common-fix]
+    appname = "Firefox"
+    summary = "*"
+    timeout = 5
+    urgency = normal
+    set_stack_tag = "youtube_force_override"
+    override_pause_level = 0
+    msg_urgency = normal
 
 [urgency_critical]
     background = "#900000"
